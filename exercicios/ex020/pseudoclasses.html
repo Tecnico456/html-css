@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Classes</title>
+    <style>
+        div {
+            display: inline-block;
+            background-color: lightgray;
+            border: 1px solid black;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+            line-height: 50px;
+            margin: 5px; 
+        }
+
+        
+    </style>
+
+
+</head>
+
+<body>
+    <div id="d1">01</div>
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+
+    <p>"display" é um parametro para colocar o tipo de exibição; Junto com o "inline-block" que é um tipo de exibição que permite que os elementos se comportem como blocos, mas ainda se alinhem horizontalmente</p>
+    <p>"height" é um parametro para colocar a altura</p>
+    <p>"width" é um parametro para colocar a largura</p>
+    <p>"line-height" é um parametro para colocar a altura da linha</p>
+    <p>"margin" é um parametro para colocar a margem</p>
+    <p>"border" é um parametro para colocar a borda onde: "1px" e a largura da borda; "solid": É o tipo de borda ; "black" é a cor da borda</p>
+    <p>"text-align" é um parametro para alinhar o texto</p>
+    <p>"background-color" é um parametro para colocar a cor de fundo</p>
+    <p>"lightgray" é uma cor de fundo clara</p>
+    <p>"black" é a cor da borda</p>
+    <p>"#" é um "id"; "." é uma 'classe' ; ":" é uma pseudo-classe. </p>
+    <p>As pseudo-classes são usadas para definir o estado de um elemento, como quando ele é clicado, focado ou quando o mouse passa sobre ele.</p>
+    <p>pseudo-classe esta relacionado ao estado de um elemento ex: se ele está ativo, se ele está marcado, se ele está vazio, se ele está habilitado, </p>
+    <p>"hover" é um pseudo-classe, é um pseudo-classe de vários elementos, no caso deste documento esta sendo aplicado ao elemento "div"</p>
+    <p>"hover" significa que: quando eu passar o mouse por cima</p>
+    <pre><code>
+        &lt;style&gt;
+            div:hover {
+                background-color: yellow;
+                color: red;
+            }
+        &lt;/style&gt;
+    </code></pre>
+    <p>O código acima muda a cor de fundo do elemento "div" para amarelo e a cor do texto para vermelho quando o mouse passa sobre ele.</p>
+    <p>"hover"  faz uma configuração de estado; /como no exemplo acima citado, ele sáo vai ficar amarelo quando eu passar o mouse sobre ela, que é o "hover" significa que: quando eu passar o mouse por cima</p>
+    
+</body>
+</html>

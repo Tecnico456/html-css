@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de textos</title>
+</head>
+<body>
+    <h1>Principais Formatações</h1>
+    
+    <h2>Negrito / Destaques</h2>
+    <p>Exitem 2 maneira de nós colocarmos em negrito:</p>
+    <p><b>Maneira Semântica</b> - Ela é simplesmente pela forma; EX: Nessa frase temos em <b>termo em negrito</b> usando a tag B; a teag B é uma tag não semantica, ou seja, ela não tem significado, ela só tem forma, isto é: O formato em negrito, o formato em negrito não quer dizer muita coisa, simpelsmente que voce quis colocar em <b>Negrito</b></p>
+    <p><Strong>Maneira não Semântica</Strong></p>
+    <p>Nesta frase, tmos um <strong>termo em destaque</strong> usando a Tag STRONG (ela é semantica)</p>
+    <p>A formatação na TAG B só tem coisas de forma, só tem sentido de forma</p>
+    <p>A formatação na TAG STRONG tem sentido semantico, ou seja, tem um significado, tem um sentido, tem um motivo para estar em negrito</p>
+    
+    <h2>Itálico</h2>
+    <p>Para colocar um <i>texto em itálico</i>, usamos a tag "I" (não semantica) <i>ITÁLICO</i></p>
+    
+    <p>Para colocar um <em>texto em itálico</em>, usamos a tag "EM" (semantica) <em>ITÁLICO</em></p>
+    
+    <p><b>Nota:</b> uma forma mais facil de colocar uma tag em uma frase pronta sem precisar ficar copiando e colando, pode-se fazer da segunte fora: Aperte Ctrl + Shift + P ; abrirá uma caixa de pesquisa e voce digitara "abb" para pesquisar sobre Wrap with Abbreviation, aparecerá uma caixa para você colocar qual é a Tag que você que invelopar, nete exemplo colocarai só a letra "i" (para italico) e aperte ENTER, e ele altomaticamente ele envelopou em italico a fraze que você quis colocar em itálico</p>
+
+    
+
+    <h2>Sublinhado</h2>
+    <p>Para colocar um <u>texto sublinhado</u>, usamos a tag "U" (não semantica) <u>SUBLINHADO</u></p>
+    
+    <h2>Riscado</h2>
+    <p>Para colocar um <s>texto riscado</s>, usamos a tag "S" (não semantica) <s>RISCADO</s></p>
+    
+    <h2>Marcação</h2>
+    <p>Para colocar um <mark>texto marcado</mark>, usamos a tag "MARK" (não semantica) <mark>MARCADO</mark></p> 
+
+    <p>Para mudar a cor do marcador não tem uma maniera em HTML de mudar uma cor, tem que usar a Linguagem CSS . Uma das maneiras de colocar CSS é dentro da propria "tag" EX:
+      Podemos mudar a Cor do marcador de texto usando o parametro "style" que é um parametro da CSS, e dentro dele colocar a propriedade "background-color" e colocar a cor que você deseja, EX: <mark style="background-color: rgb(0, 255, 0);">MARCADO</mark></p>    
+    </p>
+    <p>E no outro paragrafo, temos <mark>outro texto marcado</mark>no final, ele não herda a caracteristica da anterior.
+     para ele herdar a caracteristica de marcação do anterior, deixa todo marcador padrão que é o "Amarelo" e na parte de cima que é o cabeçalho na área "head" cria uma teg "style"  e faz um seletor chamado "mark" e neste Seletor "mark" voce coloca background-color: Linguagem EX:
+        style>
+            mark{
+                background-color: limegreen;
+        }
+
+        ou tambem podemos fazer da seguinte forma, lembrando qua a forma anterior é a mais correta, pois a forma abaixo é uma forma mais antiga e não muito usada:
+     temos que colocar a propriedade "background-color: inherit;" <mark style="background-color: inherit;">MARCADO</mark></p>
+    </p>
+    
+    <h2>Pequeno</h2>
+    <p>Para colocar um <small>texto pequeno</small>, usamos a tag "SMALL" (não semantica) <small>PEQUENO</small></p>
+    
+    <h2>Apagado (Excluido)</h2>
+    <p>Para colocar um <del>texto apagado</del>, usamos a tag "DEL" (não semantica) <del>APAGADO</del></p>      
+
+    <h2>Adicionado (inserido)</h2>
+    <p>Para colocar um <ins>texto adicionado</ins>, usamos a tag "INS" (semantica) <ins>ADICIONADO</ins></p>
+    
+    <h2>Subscrito</h2>
+    <p>Para colocar um <sub>texto subscrito</sub>, usamos a tag "SUB" (não semantica) <sub>SUBSCRITO</sub></p>  
+    
+    <h2>Sobrescrito</h2>
+    <p>Para colocar um <sup>texto sobrescrito</sup>, usamos a tag "SUP" (não semantica) <sup>SOBRESCRITO</sup></p>
+    
+    <h2>Texto em Maiúsculo</h2>
+    <p>Para colocar um <span style="text-transform: uppercase;">texto em maiúsculo</span>, usamos a propriedade "text-transform: uppercase;" <span style="text-transform: uppercase;">MAIÚSCULO</span></p>
+    
+    <h2>Texto em Minúsculo</h2>
+    <p>Para colocar um <span style="text-transform: lowercase;">texto em minúsculo</span>, usamos a propriedade "text-transform: lowercase;" <span style="text-transform: lowercase;">minúsculo</span></p>
+    
+    <h2>Texto Capitalizado</h2>
+    <p>Para colocar um <span style="text-transform: capitalize;">texto capitalizado</span>, usamos a propriedade "text-transform: capitalize;" <span style="text-transform: capitalize;">Capitalizado</span></p>
+    
+    <h2>Texto Justificado</h2>
+    <p>Para colocar um texto justificado, usamos a propriedade "text-align: justify;" <span style="text-align: justify;">Justificado</span></p>
+    
+    <h2>Texto Centralizado</h2>
+    <p>Para colocar um texto centralizado, usamos a propriedade "text-align: center;" <span style="text-align: center;">Centralizado</span></p>
+    
+    <h2>Texto à Direita</h2>        
+    <p>Para colocar um texto à direita, usamos a propriedade "text-align: right;" <span style="text-align: right;">Direita</span></p>
+    
+    <h2>Texto à Esquerda</h2>   
+    <p>Para colocar um texto à esquerda, usamos a propriedade "text-align: left;" <span style="text-align: left;">Esquerda</span></p>
+    
+    <h2>Texto Justificado</h2>
+    <p>Para colocar um texto justificado, usamos a propriedade "text-align: justify;" <span style="text-align: justify;">Justificado</span></p>
+   
+
+</body>
+</html>

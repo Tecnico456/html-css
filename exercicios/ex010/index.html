@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+
+        <p>Você pode acessar o meu <a href="https://gustavoguanabara.github.io">repositório no Github</a></p>
+        <p>Você também pode acessar o meu  <a href="https://youtube.com/cursoemvideo">canal gratuito no youtube</a></p>
+        <p>quando Você clica neste link ele vai para o inderço indicado e então o usuário vai começar uma navegação nova e provalvelmente ele nunca mais vai voltar para o seu site, isto porque voce sobrepos o site novo no lugar do seu site</p>
+        <p>Quando for um link externo(que vai tirar o usuário do seu site) é sempre recomendado acrecentar os parametros "target="_blank" rel="external"(relativo a externo, ou seja este é um link externo que vai para fora do seu site e eu quero que ele tenha um "alvo"(target) em _blank (uma janela em branco))"</p>
+        <p>ex:<a href="https://gustavoguanabara.github.io" target="_blank" rel="external">repositório no Github</a></p>
+        <p>Assim desta forma vai abrir o outro site e tambem vai manter o seu aberto tambem em outra aba</p>
+        <P>Para poder controlar onde o site de destino vai abrir, podemos usar o atributo target, 
+        que suporta os seguintes valores: 
+        ‣ _blank vai abrir o link em uma nova janela em branco 
+        ‣ _self vai abrir o link na janela ou frame atual (padrão) 
+        ‣ _top vai desfazer todos os frames e abrir o destino no navegador completo 
+        ‣ _parent similar ao uso do _top em uma referência à janela mãe 
+        ‣ nome-do-frame caso esteja usando frames, indicar o nome da janela a abrir </P>
+        <p>Existe um recurso bem interessante para links que é indicar qual é a 
+            natureza do destino usando o atributo rel. Esse atributo aceita vários 
+            valores, entre eles vou citar: 
+            ‣next indica que o link é para a próxima parte do documento atual 
+            ‣prev indica que o link é para a parte anterior do documento atual 
+            ‣author indica que é um link para o site do autor do artigo atual 
+            ‣external indica que é um link para outro site que não faz parte do site 
+            #DevWeb - Capítulo 10
+             prof. Gustavo Guanabara
+             Página  de 
+            4
+             9
+            atual 
+            ‣   indica que é um link para um site não endossado, como um link pago </p>
+
+        <p>Exemplo de uso do atributo rel: 
+                <a href="https://gustavoguanabara.github.io" target="_blank" rel="external nofollow">repositório no Github</a></p>
+        <p>Assim, o link vai abrir em uma nova janela e o Google não vai considerar esse link para ranqueamento.</p>
+        
+        <p>Para criar um link para um e-mail, basta usar o prefixo mailto: seguido do endereço de e-mail. 
+            Exemplo: 
+                <a href="mailto:seuemail@example.com">Enviar e-mail</a></p>
+        
+        <p>Para criar um link para um telefone, basta usar o prefixo tel: seguido do número de telefone. 
+            Exemplo: 
+                <a href="tel:+5511999999999">Ligar para a empresa</a></p>
+        
+        <p>Para criar um link para um arquivo, basta usar o caminho relativo ou absoluto do arquivo. 
+            Exemplo: 
+                <a href="arquivo.pdf">Baixar o arquivo</a></p>
+        
+        <p>Para criar um link para uma âncora, basta usar o ID da âncora como valor do atributo href. 
+            Exemplo: 
+                 <a href="#secao2">Ir para a seção 2</a></p>
+
+    <h1>Usando links internos</h1>
+        <p>Esta é a primeira pagina do meu site. Se você quiser, pode acessar também a minha <a href="pag002.html" rel="next"><strong>SEGUNDA PÁGINA</strong></a></p>
+        <p>quando colocar o parametro "rel next" quer dizer que é para a pagina de seguintes; isto facilita tabém para o mecanismo de busca encontar qual é o mecanismo de navegação que você está criando para o seu site, você não vai deixar o Google decidir qual é a proxima pagina, você está dizendo para ele "olha Google. dá uma olhada nesse código aqui e esta aqui que está com o parametro "rel next" é a minha próxima página</p>
+        <p>Fazendo desta forma visualmente não muda nada, mais por dentro tem um significado uma semântica na qual você dá um valor para esta link</p>
+        <p>Se você tiver endereçando um link não para um site não oficial, ou seja, um site não endossado, existe um "rel" para isso que é o <strong>"nofollow"</strong> (quer dizer <strong>"não siga"</strong> para o mecanismo de busca). Quando você colocar este parâmetro, o mecanismo de busca, por exemplo, o Google, <strong>não vai indexar</strong> este link para encontrá-lo.</p>
+   
+        <p>Voce também pode acessar minha pagina 003 que é a minha <a href="noticias/pag003.html">pagina de Notícias</a></p>
+        
+    <h1>Links para downloads</h1>
+    <p>Segue a segunte lista:</p>
+    <ul>
+        <li><a href="Livro/10 - Ligações em toda parte.pdf" download="Ligações em toda parte.pdf">Baixar livro em PDF</a></li>
+        <li><a href="Livro/10 - Ligações em toda parte.pdf" download="Ligações em toda parte.pdf" type="application/pdf">Baixar livro em PDF</a></li>
+        <li><a href="Livro/10 - Ligações em toda parte.rar">Livro compactado em .rar </a></li>
+        <li><a href="Livro/10 - Ligações em toda parte.rar" download="Ligações em toda parte.rar" type="application/zip">Livro compactado em .rar </a></li>
+        <p>Aqui vão alguns media types bem usados no nosso dia-a-dia: 
+            <ul>
+                <li>application/zip</li>
+                <li>text/html</li>
+                <li>text/css</li>
+                <li>text/javascript</li>
+                <li>video/mp4</li>
+                <li>video/H264</li>
+                <li>video/JPEG</li>
+                <li>audio/aac</li>
+                <li>audio/mpeg</li>
+                <li>font/ttf</li>
+                <li>image/jpeg</li>
+                <li>image/png</li>
+            </ul>
+            LISTA DE MEDIA TYPES: Se você quer saber o que escrever 
+            dentro do atributo type de uma âncora de hypertext, consulte a lista 
+            oficial da IANA.org disponível no link abaixo. 
+            <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank" rel="external">https://www.iana.org/assignments/media-types/media-types.xhtml</a></p>
+    </ul>
+  
+</body>
+</html>

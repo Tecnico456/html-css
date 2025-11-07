@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio número 9</title>
+    <link rel="shortcut icon" href="imagens/mascote.png" type="image/x-icon">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, auto); /* Duas colunas com largura mínima suficiente */
+            gap: 5px; /* Espaço bem pequeno entre as imagens */
+            justify-content: center; /* Centraliza o grid */
+        }
+
+        .grid-container img {
+            width: 200px; /* Ajuste o tamanho das imagens */
+            height: auto;
+            border-radius: 10px; /* Cantos arredondados, opcional */
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Vídeos Legais para Assistir</h1>
+    <div class="grid-container">
+        <a href="Curso HTML.html">
+            <img src="imagens/thumb-html.png" alt="Curso HTML">
+        </a>
+        <a href="Curso JavaScript.html">
+            <img src="imagens/thumb-js.png" alt="Curso JavaScript">
+        </a>
+        <a href="Curso Hadware.html">
+            <img src="imagens/thumb-hardware.png" alt="Curso Hardware">
+        </a>
+        <a href="Curso Pyton.html">
+            <img src="imagens/thumb-python.png" alt="Curso Python">
+        </a>
+    </div>
+</body>
+</html>

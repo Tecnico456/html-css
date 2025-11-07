@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LINKS</title>
+    <style>
+        /*
+            # = ID
+            . = Classe
+            * = Seleciona todos os elementos
+            > = Seleciona o filho direto do elemento
+            :hover = Seleciona o elemento quando o mouse passa por cima
+            :link = Seleciona o link não visitado
+            :visited = Seleciona o link visitado
+            :active = Seleciona o link quando é clicado
+            ::after = Seleciona o elemento após o link
+            ::before = Seleciona o elemento antes do link
+
+        */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+       a {
+        color: red; /* Cor do link */
+        text-decoration: none; /* Remove o sublinhado do link */
+        font-weight: bold; /* Deixa o texto do link em negrito */
+       }
+       a:visited{ /* Cor do link visitado */
+        color: darkred; /* Cor do link visitado */
+       }
+        a:hover { /* Cor do link quando o mouse passa por cima */
+          color: black; /* Cor do link quando o mouse passa por cima */
+          text-decoration: underline; /* Sublinha o link quando o mouse passa por cima */
+         }
+        a:active { /* Cor do link quando é clicado */
+             color: yellow; /* Cor do link quando é clicado */
+             text-decoration: none; /* Remove o sublinhado do link quando é clicado */
+            }
+        a::after { /* Adiciona um ícone após o link */
+            content: " 🔗"; /* Ícone de link */
+            font-size: 0.8em; /* Tamanho do ícone */
+            color: gray; /* Cor do ícone */
+        }
+    .especial { /* Classe especial para links */
+            background-color: lightblue; /* Cor de fundo especial para o link */
+            padding: 5px; /* Espaçamento interno para destacar o link */
+            color: blue; /* Cor especial para o link */
+            font-style: italic; /* Estilo itálico para o link especial */
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+        <ul>
+            <li><a href="https://gustavoguanabara.github.io" target="_blank" rel="noopener">Repositório Github</a></li>
+            <li><a href="https://youtube.com/cursoemvideo/"class="especial" target="_blank" rel="noopener">Canal do YouTube</a></li>
+            <li><a href="https://www.cursoemvideo.com" target="_blank" rel="noopener">Site do Curos em Video</a></li>
+        </ul>
+   
+        <h2>Pseudo Classes</h2>
+
+   <p>Pseudo Classes são as que defice estados de elemento detro do HTML</p>
+    <p>Exemplo de pseudo classes:</p>
+    <pre><code>a:link { /* Cor do link */
+        color: red; /* Cor do link */
+    }
+    a:visited { /* Cor do link visitado */
+        color: darkred; /* Cor do link visitado */
+    }
+    a:hover { /* Cor do link quando o mouse passa por cima */
+        color: black; /* Cor do link quando o mouse passa por cima */
+        text-decoration: underline; /* Sublinha o link quando o mouse passa por cima */
+    }
+    a:active { /* Cor do link quando é clicado */
+        color: yellow; /* Cor do link quando é clicado */
+        text-decoration: none; /* Remove o sublinhado do link quando é clicado */
+    }</code></pre>
+    
+    <h2>Pseudo Elemento</h2>
+
+    <p>Pseudo Elemento ele pode mecher nas Classes, nos Elementos, nos IDs; Ele meche diretamento no conteudo periférico do Elemnto</p>
+    
+    <p>Exemplo de pseudo elemento:</p>
+    
+    <pre><code>a::after { /* Adiciona um ícone após o link */
+        content: " 🔗"; /* Ícone de link */
+        font-size: 0.8em; /* Tamanho do ícone */
+        color: gray; /* Cor do ícone */
+    }</code></pre>
+    
+    <p>O código acima adiciona um ícone de link após o link, com tamanho e cor personalizados.</p>
+    <p>Você pode personalizar os links da forma que desejar, utilizando as pseudo classes e pseudo elementos.</p>
+    
+    <h2>Classes</h2>
+
+    <p>As classes são utilizadas para estilizar elementos específicos dentro do HTML. Você pode criar uma classe e aplicá-la a um elemento para personalizar sua aparência.</p>
+
+    <p>Exemplo de classe:</p>
+
+    <pre><code>.especial {
+        color: blue; /* Cor especial para o link */
+        font-style: italic; /* Estilo itálico para o link especial */
+    }</code></pre>
+
+    <p>O código acima cria uma classe chamada "especial" que altera a cor do link para azul e aplica um estilo itálico.</p>
+    <p>Você pode aplicar essa classe a qualquer link no HTML, como mostrado no exemplo acima.</p>
+    <p>Vantagem de Criar Classes</p>
+    <p>As classes são vantajosas porque permitem que você reutilize estilos em vários elementos sem precisar repetir o código CSS. Isso torna o código mais limpo e fácil de manter.</p>
+    <p>Além disso, as classes permitem que você aplique estilos específicos a grupos de elementos, facilitando a personalização da aparência do seu site.</p>
+    <p>Você pode criar quantas classes quiser e aplicá-las a diferentes elementos para obter o estilo desejado.</p>
+    
+    <h2>Representaç~eos do HTML no CSS</h2>
+    <p>As representações do HTML no CSS são utilizadas para selecionar e estilizar elementos específicos dentro do documento HTML. Aqui estão algumas representações comuns:</p>
+    <ul>
+        <li># = ID</li>
+        <li>. = Classe</li>
+        <li>* = Seleciona todos os elementos</li>
+        <li>> = Seleciona o filho direto do elemento</li>
+        <li>:hover = Seleciona o elemento quando o mouse passa por cima</li>
+        <li>:link = Seleciona o link não visitado</li>
+        <li>:visited = Seleciona o link visitado</li>
+        <li>:active = Seleciona o link quando é clicado</li>
+        <li>::after = Seleciona o elemento após o link</li>
+        <li>::before = Seleciona o elemento antes do link</li>
+    </ul>
+</body>
+</html>

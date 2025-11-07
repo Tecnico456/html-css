@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FONTES EXTERNAS</title>
+    <style>
+        @font-face {
+            font-family: 'Love Larry'; 
+            src: url('love larry ttf.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        body {
+           font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            font-family: 'Love Larry', Times, serif;
+            font-size: 3em;    
+            font-weight: normal;
+        }
+        
+    </style>
+</head>
+<body>
+    <H1>FONTES EXTERNAS</H1>
+    <p>para colocar fontes que não tem no google fonts, você pode baixar fonts de sites como por exemplo o site "dafont" no link-&gt; <a href="https://www.dafont.com/pt/" target="_blank">https://www.dafont.com/pt/</a></p>
+    <p>Neste site voce pode baixar a fonte, descompacta ela e colca em uma pasta do site, no caso para estudo vai esta na pasta do proprio site, depois no código na primeira linha abaixo da tag "style" voce coloca o seletor especial "@font-face" que ele ja vai montar para voce colocar o "font-family" e a "url" , e na "url" voce colocar o nome do arquivo qeu voce baixou da fonte (tem que ser o nome exatamente como está escrito, e tem que está entre aspas)</p>
+    
+    <h2>TIPOS DE FORMAT()</h2>
+
+    <p>Os tipos de formatos de fontes são os seguintes:</p>
+    <ul>
+        <li>truetype (.ttf)</li>
+        <li>opentype (.otf)</li>
+        <li>web open font format (.woff)</li>
+        <li>web open font format 2 (.woff2)</li>
+        <li>embedded open type (.eot)</li>
+        <li>scalable vector graphics (.svg)</li>
+        <li>truetype-aat (apple advanced typography) </li>
+        <li>svg</li>
+    </ul>
+
+    <p>O formato mais comum é o "truetype" que é o ".ttf" e o ".otf" que é o "opentype", mas tem outros formatos como o ".woff" e o ".woff2" que são mais leves e otimizados para a web, mas não são tão comuns.</p>
+    <p>O formato ".svg" é um formato vetorial, que é mais leve e escalável, mas não é tão comum para fontes.</p>
+    <p>O formato ".eot" é um formato antigo, que era usado principalmente no Internet Explorer, mas não é mais necessário.</p>
+    <p>O formato ".woff" é um formato otimizado para a web, que é mais leve e rápido de carregar, mas não é tão comum.</p>
+    <p>O formato ".woff2" é uma versão mais nova do ".woff", que é ainda mais leve e rápido de carregar, mas não é tão comum</p>
+    <p>Se o arquivo for ".otf" voce escreve em "format()" opentype , entre parenteses, ex: format(opentype)</p>
+    <p>Se o arquivo for ".ttf" voce escreve em "format()" truetype , entre parenteses, ex: format(truetype)</p>
+    <p>Se o arquivo for ".woff" voce escreve em "format()" woff , entre parenteses, ex: format(woff)</p>
+    <p>Se o arquivo for ".woff2" voce escreve em "format()" woff2 , entre parenteses, ex: format(woff2)</p>
+    <p>Se o arquivo for ".eot" voce escreve em "format()" eot , entre parenteses, ex: format(eot)</p>
+    <p>Se quiser tambem adicionar o outro arquivo de url da font baixada, pode na mesma linha dar um espaço e colocar "url()" e o nome do arquivo dentro dos parenteses, e colocar tambem o "format()"</p>
+
+
+
+</body>
+</html>

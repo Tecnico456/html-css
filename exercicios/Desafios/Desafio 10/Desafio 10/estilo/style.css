@@ -1,0 +1,114 @@
+@charset "UTF-8"; /* CSS Document */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap'); 
+
+@font-face {
+    /* A regra @font-face no CSS permite que você utilize fontes personalizadas em seu site, mesmo que elas não estejam instaladas no computador do usuário. No trecho selecionado, está sendo definida uma fonte chamada 'Android'. O arquivo da fonte está localizado no caminho idroid.otf e é especificado como do tipo opentype através do parâmetro format('opentype'). O atributo font-weight: normal; indica que esta definição corresponde ao peso normal da fonte.
+    A função format('opentype') dentro da regra @font-face serve para informar ao navegador qual é o formato do arquivo de fonte que está sendo utilizado, neste caso, o formato OpenType (.otf). Isso ajuda o navegador a identificar corretamente o tipo de fonte e decidir se ele é compatível para exibição. Especificar o formato pode melhorar a compatibilidade entre diferentes navegadores e garantir que a fonte seja carregada e renderizada corretamente.
+*/
+
+    font-family: 'Android';
+    src: url('../fontes/idroid.otf') format('opentype'); 
+    font-weight: normal;
+}
+
+/*
+#c5ebd6
+#83e1ad
+#3ddc84
+#2fa866
+#1a5c37
+#063d1e
+*/
+
+/* 
+    O seletor :root em CSS representa o elemento raiz do documento, que normalmente é o <html>.
+    Ele é frequentemente utilizado para definir variáveis CSS globais (custom properties) que podem ser reutilizadas em todo o documento.
+    Isso facilita a manutenção e a consistência do estilo, permitindo alterar valores em um único lugar.
+    As variáveis definidas no :root podem ser acessadas em qualquer lugar do CSS usando a sintaxe var(--nome-da-variavel).
+    Neste exemplo, as cores são definidas como variáveis CSS, permitindo fácil reutilização e
+    modificação em todo o estilo do documento.
+    As cores definidas são:
+    - --color0: #c5ebd6 (cor de fundo)
+    - --color1: #83e1ad (cor clara)
+    - --color2: #3ddc84 (cor média)
+    - --color3: #2fa866 (cor escura)
+    - --color4: #1a5c37 (cor muito escura)
+    - --color5: #063d1e (cor mais escura)
+    Essas variáveis podem ser usadas para estilizar elementos, garantindo que as cores sejam consistentes
+    e fáceis de atualizar.
+    As cores são escolhidas para criar uma paleta harmoniosa, com um gradiente de tons de verde,
+    proporcionando uma sensação de frescor e natureza.
+
+*/
+:root {
+    --color0: #c5ebd6;
+    --color1: #83e1ad;
+    --color2: #3ddc84;
+    --color3: #2fa866;
+    --color4: #1a5c37;
+    --color5: #063d1e;
+    --font-padrao: Arial, verdana, helvetica, sans-serif; 
+    --font-destaque: 'Bebas Neue', cursive, sans-serif;
+    --font-android: 'Android', cursive, sans-serif;
+}
+
+* { 
+    margin: 0;
+    padding: 0;
+    /* O seletor universal * é usado para aplicar estilos a todos os elementos do documento.
+    Neste caso, ele está definindo o box-sizing como border-box, o que significa que
+    a largura e altura de um elemento incluirão o padding e a borda, tornando o layout mais previsível.
+    Além disso, está definindo margin e padding como 0, o que remove as margins e paddings
+    padrão de todos os elementos, garantindo que não haja espaçamento indesejado ao redor dos
+    elementos. Isso é útil para criar um layout mais consistente e controlado, especialmente
+    quando se está começando a estilizar uma página do zero.
+*/
+   }
+
+body {
+    background-color: var(--color0);
+    font-family: var(--font-padrao);
+}
+
+header {
+    background-color: var(--color4);
+    font-family: var(--font-destaque);
+}
+
+header > h1 {
+    color: white;
+}
+
+header > p {
+    color: white
+ 
+}
+
+nav {
+    background-color: var(--color5);
+}
+
+main {
+    background-color: white;
+}
+
+
+main h1 {
+    color: var(--color5);
+    font-family: var(--font-android);
+
+    /*No HTML, <main> é uma tag semântica que representa o conteúdo principal do documento. Ela deve conter as informações mais importantes da página, ou seja, aquilo que é único e central para aquele documento, excluindo cabeçalhos, menus, barras laterais e rodapés.
+
+    O uso do <main> ajuda na acessibilidade e na organização do código, pois facilita para leitores de tela e mecanismos de busca identificarem rapidamente o conteúdo principal da página. Em seu CSS, ao usar o seletor main h1, você está aplicando estilos especificamente aos títulos <h1> que estão dentro do conteúdo principal da página.*/
+}
+
+main h2 {
+    color: var(--color4);
+    font-family: var(--font-android);
+}
+
+footer {
+    background-color: var(--color5);
+    color: white;
+}

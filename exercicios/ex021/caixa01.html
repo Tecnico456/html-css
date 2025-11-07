@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 {
+            background-color: lightblue; /* cor de fundo azul claro */
+            height: 300px; /* altura da caixa */  
+            width: 300px; /* largura da caixa */
+            border-width: 10px; /* largura da borda */
+            border-style: solid; /* estilo da borda */
+            border-color: blue; /* cor da borda */
+            
+            padding-top: 10px; /* preenchimento interno superior */
+            padding-bottom: 10px;   /* preenchimento interno inferior */  
+            padding-left: 10px; /* preenchimento interno esquerdo */
+            padding-right: 10px;    /* preenchimento interno direito */
+
+            margin-top: 20px;   /* margem superior */
+            margin-right: 20px; /* margem direita */ 
+            margin-bottom: 40px;/* margem inferior */
+            margin-left: 20px;  /* margem esquerda */  
+            
+            outline-width: 5px; /* largura do contorno */
+            outline-style: dashed;  /* estilo do contorno Tracejado*/      
+            outline-color: salmon;  /* cor do contorno */
+        }
+        a {
+            border-width: 10px; /* largura da borda */
+            border-style: solid; /* estilo da borda */
+            border-color: red;  /* cor da borda */
+
+            padding-top: 10px;  /* preenchimento interno superior */
+            padding-bottom: 10px;   /* preenchimento interno inferior */
+            padding-left: 10px;     /* preenchimento interno esquerdo */
+            padding-right: 10px;    /* preenchimento interno direito */
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixas Box-level</h1>
+    <p>Pparágrafos também são exemplos de box-level, mas  os <a href="#">Links são exemplos  de caixas inline-level</a>. Vamos ver como tudo isso finciona.</p>
+    <p>Margin fica da Borda para fora; o Padding fica da borda para dentro</p>
+    <p>Para configurar as Box como Margin e Padding, configura-se no sentido Horário</p>
+    <p>Exemplo</p>
+    <ul>
+        <li>10px para o topo</li>
+        <li>20px para a direita</li>
+        <li>30px para a base</li>
+        <li>40px para a esquerda</li>
+    </ul> 
+    <p>Para <strong>centralizar</strong> a box você coloca a Margin em <strong>auto</strong></p> 
+    <p>Exemplo</p>
+    <ul>
+        <li>Margin Top: 10px</li>
+        <li>Margin Right: <strong>auto</strong></li>
+        <li>Margin Bottom: 10px</li>
+        <li>Margin Left: <strong>auto</strong></li>
+    </ul>
+    <p>para simplificar pode colocar somente:</p>
+    <ul>
+        <li>Margin: auto;</li>
+    
+    <p>Para simplificar o código pode-se usar o shorthands</p>
+    <p>Exemplo:</p>
+    <ul>
+        <li><strong>Padding: 10px 20px 30px 40px;</strong></li> //Padding no sentido horário 
+        <li><strong>Padding: 10px 20px;</strong></li> //Padding 10px para o topo e base, e 20px para a direita e esquerda 
+        <li><strong>Padding: 10px;</strong></li> //Padding uniforme de 10px em todos os lados  
+        <li><strong>Border: 10px solid blue;</strong></li> // Borda de 10px, estilo sólido e cor azul
+        <li><strong>Border: 10px solid;</strong></li> // Borda de 10px, estilo sólido, cor padrão
+        <li><strong>Border: 10px;</strong></li> // Borda de 10px em todos os lados
+        <li><strong>Margin: 20px;</strong></li>  // Margem de 20px em todos os lados
+        <li><strong>Margin: 20px 10px;</strong></li> // Margem de 20px para o topo e base, 10px para a direita e esquerda
+        <li><strong>Margin: 20px 10px 30px;</strong></li> // Margem de 20px para o topo, 10px para a direita e esquerda, 30px para a base
+        <li><strong>Margin: 20px 10px 30px 40px;</strong></li> // Margem de 20px para o topo, 10px para a direita, 30px para a base, 40px para a esquerda
+        <li><strong>Outline: 5px solid blue;</strong></li> // Contorno de 5px, estilo sólido e cor azul
+        <li><strong>Outline: 5px solid;</strong></li> // Contorno de 5px, estilo sólido, cor padrão
+        <li><strong>Outline: 5px</strong>;</li> // Contorno de 5px
+        <li><strong>Outline: 5px dashed salmon;</strong></li> // Contorno de 5px, estilo tracejado e cor salmão
+
+    </ul>
+    
+
+</body>
+</html>

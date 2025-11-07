@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras Formatações</title>
+</head>
+<body>
+    <h1>Outras Formatações</h1>
+    <h2>Código-fonte / pré-formatação</h2>
+    <p>O comando <code>document.getElementId('teste')</code> é escrito em linguagem JavaScript</p>
+    <p>As palavras eles vão ser escritas sem um espaçamento padrão, onde algumas letras irão ocupar mais espaço que outras, e com a tag "code" voce consegue colocar um espaãmento pooadrão entre as letras, é o que se chama de fonte monoespaçada e esta fonte ela é ótima para ler códigos tato que o nome da tag é "code"(código)</p>
+    <code>
+        num = int(input('Digite um número: '))
+        if num % 2 == 0:
+            print(f'O número {num} é PAR')
+        else:
+            print(f'O número {num} é ÍMPAR')
+            print('Fim do programa')
+    </code>
+    <p>Se colocar assim no site fica um do lado do outro, a tag "code" ele não organiza o código dom indentação, para os códigos sairem organizados com identação, voce pode pegar todo o código e envelopar em uma tag "pre", e tudo que voce colocar na sua linha de códgi será considerado no site como: quebras de linha, tabulações, os espaços com suas repectivas quantidade de espaços, assim o código no site vai ficar com a aprencia de código de linguagem de programação,  EX: </p>
+     <pre>
+         <code>
+    num = int(input('Digite um número: '))
+    if num % 2 == 0:
+        print(f'O número {num} é PAR')
+    else:
+        print(f'O número {num} é ÍMPAR')
+        print('Fim do programa')
+         </code>
+     </pre>
+     <p>Se quiser trazer o código todo para o canto esquerdo sem ter que ficar tirando linha por linha, seleciona tudo e vai apertando as teclas "Shift + Tab" na sua linha de comando, se quiser trazer um pouco mais para a direita é só selecionar e aprtar a tecla "Tab"</p>
+     <p>tudo que estiver dentro da tag "pre" será considerado, inclusive paertando "Enter varias vezes para pular linha tambêm será considerado como linha saltado na apresentação do site"</p>
+     <h2>Citações
+        <p>Para fazer citações no HTML, voce pode usar a tag "blockquote" para fazer citações longas, e a tag "q" para fazer citações curtas, EX:</p>
+        <blockquote>
+            <p>Se você quer ir rápido, vá sozinho. Se você quer ir longe, vá acompanhado.</p>
+            <footer>Provérbio africano</footer>
+        </blockquote>
+        <p>Se você quer ir rápido, vá sozinho. Se você quer ir longe, vá acompanhado.</p>
+        <footer>Provérbio africano</footer>
+        
+        <p>Para fazer citações no HTML, voce pode usar a tag "blockquote" para fazer citações longas, e a tag "q" para fazer citações curtas, EX:</p>
+        <blockquote cite="https://www.pensador.com/frase/MTY5NzUyNA/">
+            <p>Se você quer ir rápido, vá sozinho. Se você quer ir longe, vá acompanhado.</p>
+            <footer>Provérbio africano</footer>
+        </blockquote>
+        
+        <p>na tag "blockquote" voce pode colocar um texto que é uma citação, e na tag "footer" voce pode colocar o autor da citação, e o texto que está dentro da tag "footer" ele vai ficar embaixo da citação, e o texto que está dentro da tag "blockquote" ele vai ficar em cima da citação.</p>    
+        
+        <P>Na Tag "blockquote" você pode colocar dentro da tag o parametro "cite" onde voce pode colocar o endereõ do link da citação, visualmente na apresentação do site o link não vai aparecer, mas, os mecanismos de busca, o Google, a parte intena do site, vai saber que a frase da citação etá referenciando a citação que está no endereço indicado dentro do parametro na tag.</P>
+        
+        <p>Se voce quiser fazer uma citação de um texto que está dentro de um parágrafo, voce pode usar a tag "q" para fazer a citação, EX:</p>
+        
+        <p>Segundo o <q>Wikipédia</q>, a <q>World Wide Web</q> é um sistema de documentos em hipermídia que são interligados e executados na Internet.</p>
+        
+    <p>não use "aspas" para citações, usa-se a tag "q" porque voce está dando sentido de uma citação.</p>
+    
+    <h2>Abreviações</h2>
+    <p>Para fazer abreviações no HTML, voce pode usar a tag "abbr", EX:</p>
+    <p>HTML é uma abreviação de <abbr title="HyperText Markup Language">HTML</abbr></p>
+   
+    <h2>Texto invertido</h2>
+    <p>Para fazer texto invertido no HTML, voce pode usar a tag "bdo", EX:</p>
+    <p><bdo dir="rtl"> -----> Texto invertido  </bdo></p>
+    
+</body>
+</html>

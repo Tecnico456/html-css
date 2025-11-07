@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de hover</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div > p {
+            display: none; /* Esconde os parágrafos que estão dentro da div */
+        }
+
+        div:hover > p {
+            display: block; /* Exibe os parágrafos que estão dentro da div quando o mouse passa sobre a div */
+            background-color: red; /* Muda a cor de fundo para amarelo quando o mouse passa sobre o elemento */
+            color: white; /* Muda a cor do texto para vermelho quando o mouse passa sobre o elemento */
+        }
+        
+        div:hover {
+            color: red;          /* Muda a cor do texto para vermelho quando o mouse passa sobre o elemento */
+        }
+    </style>
+</head>
+<body>
+    <h1>EXEMPLO DE HOVER</h1>
+    <p>PASSE O MOUSE SOBRE O TEXTO ABAIXO !</p>
+    <div>Passe o Mouse Aqui !
+        <p>Texto escondido</p>
+        <p>como esconde um paragrafo que está dentro da div ?</p>
+        <p>se voce colocar o simbolo ">" depois da "div" e dpois o "p" significa que um paragrafo que esta dentro(>) da "div", que é filho de uma "div", então, ele não vai mecher nos outros paragrafos, só vai mecher no paragrafo que está dentro da div , adicionando os parametros: display: none;</p>
+        <pre><code>div &gt; p {
+        display: none;
+    }</code></pre>
+        <p>isso significa que o paragrafo que está dentro da div, não vai ser exibido</p>
+        <p>quando eu passar o mouse por cima da div, ele vai exibir os paragrafos que estão dentro da div</p>
+        <p>isso é o hover, que significa que quando eu passar o mouse por cima da div, ele vai exibir os paragrafos que estão dentro da div</p>
+        <p>exemplo</p>
+        <pre><code>div:hover > p {
+            display: block; /* Exibe os parágrafos que estão dentro da div quando o mouse passa sobre a div */
+            background-color: red;
+            color: white;
+        }</code></pre>
+        
+        <p>o código acima muda a cor de fundo do elemento "div" para amarelo e a cor do texto para vermelho quando o mouse passa sobre ele.</p>
+
+        <p>o hover faz uma configuração de estado; como no exemplo acima citado, ele só vai ficar amarelo quando eu passar o mouse sobre ela, que é o "hover" significa que: quando eu passar o mouse por cima</p>
+        
+        <p>isso significa que quando eu passar o mouse por cima da div, ele vai exibir os paragrafos que estão dentro da div</p>
+        <p>isso significa que quando eu passar o mouse por cima da div, ele vai exibir os paragrafos que estão dentro da div e mudar a cor de fundo para amarelo e a cor do texto para vermelho</p>
+
+        <p>isso significa que quando eu passar o mouse por cima da div, ele vai mudar a cor de fundo para amarelo e a cor do texto para vermelho</p>
+
+    </div>
+    
+</body>
+</html>

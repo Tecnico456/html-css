@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head> <!-- significa cabeça, é onde você coloca as configurações do seu site -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gruping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif; /* Define a fonte do corpo do documento */
+            background-color: dimgray; /* Define a cor de fundo do corpo do documento */
+            margin: 0; /* Remove a margem padrão do corpo do documento */
+        }
+
+        .main-title {
+            background-color: lightblue;
+            text-align: center;
+            padding: 30px;
+            margin: 100px auto;
+            
+        }
+        header{
+            
+            background-color: white;
+            padding: 10px; /* Define o preenchimento interno do cabeçalho */
+            margin: 10px auto; /* Define a margem superior e inferior do cabeçalho */
+        }
+
+        nav {
+            background-color: rgb(102, 102, 102); /* Define a cor de fundo da barra de navegação */
+            padding: 3px; /* Define o preenchimento interno da barra de navegação */
+            box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra à barra de navegação */
+        }
+        
+        nav a {
+            color: white; /* Define a cor do texto dos links de navegação */
+            text-decoration: none; /* Remove o sublinhado dos links */
+            font-weight: bold; /* Define o peso da fonte dos links */
+            padding: 5px; /* Define o preenchimento interno dos links */
+        }
+
+        nav a:hover {
+            text-decoration: underline; /* Adiciona um sublinhado aos links ao passar o mouse */
+            cursor: pointer; /* Muda o cursor para indicar que é um link clicável */
+            background-color: gray; /* Define a cor de fundo dos links ao passar o mouse */
+            color: black; /* Define a cor do texto dos links ao passar o mouse */
+        }
+
+        main {
+            background-color: white; /* Define a cor de fundo do conteúdo principal */
+            padding: 10px; /* Define o preenchimento interno do conteúdo principal */
+            margin: 10px auto; /* Define a margem superior e inferior do conteúdo principal */
+            max-width: 800px; /* Define a largura máxima do conteúdo principal */
+            border-radius: 10px 90px 10px 50px; /* Define o raio das bordas do conteúdo principal */
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra ao conteúdo principal */
+        }
+
+        article {
+            background-color: lightgray; /* Define a cor de fundo do artigo */
+            padding: 5px; /* Define o preenchimento interno do artigo */
+        }
+
+        article > aside {
+            background-color: rgb(165, 165, 165); /* Define a cor de fundo do aside dentro do artigo */
+        
+        }
+
+        footer {
+            background-color: black; /* Define a cor de fundo do rodapé */
+            color: white; /* Define a cor do texto do rodapé */
+            text-align: center; /* Centraliza o texto do rodapé */
+            padding: 1px; /* Define o preenchimento interno do rodapé */
+            margin: 0px; /* Define a margem superior e inferior do rodapé */
+        }
+        footer p {
+            margin: 0; /* Remove a margem dos parágrafos dentro do rodapé */
+        }
+
+    
+
+
+    </style>
+</head>
+<body>
+
+    <h1 class="main-title">Gruping Tags</h1>
+    <article>
+        <p>As tags de agrupamento sempre foram 2</p>
+        <p>O <strong>div</strong> é um agrupamento de blocos, ou seja, de caixas de nível de bloco</p>
+        <p>O <strong>span</strong> é um agrupamento de caixas de nível de linha, ou seja, de caixas inline-level</p>
+        <p>Existem Gruping tags semânticas, como <strong>header</strong>, <strong>footer</strong> e <strong>article</strong>.</p>
+        <p>Essas tags semânticas são usadas para dar significado ao conteúdo, facilitando a compreensão e a acessibilidade.</p>
+        <p>Por exemplo, a tag <strong>header</strong> é usada para agrupar o cabeçalho de uma página faz parte do conteúdo do seu site, enquanto a tag <strong>footer</strong> é usada para agrupar o rodapé.</p>
+        <p>A tag <strong>main</strong> é usada para agrupar o conteúdo principal de uma página.</p>
+        <p>Exemplo:</p>
+    </article>
+    <div>
+        <header>
+            <h1>Bem-vindo ao meu site</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+            <p>Com a tag nav você pode agrupar links de navegação.</p>
+
+        </header>
+        <main>
+            <p>Este é o conteúdo principal da página.</p>
+            <section id="assuntos">
+                  <p>Fazendo desta forma o site com Gruping Tags você ja tem a estrutura do seu site modelado, e voce consegue com CSS estilizar cada parte do seu site de forma independente. Deixando assim mais fácil de aplicar a CSS em todo o seu site e deixando ele cada vez mais bonito. </p>
+                  
+            </section>
+            <section id="noticias">
+                <h2>Notícias</h2>
+                <p>Últimas notícias do site.</p>
+                <article>
+                    <h2>box-shadow </h2>
+                    <p>A propriedade <strong>box-shadow</strong> é usada para adicionar sombras a elementos. Ela aceita valores para deslocamento horizontal, deslocamento vertical, desfoque, espalhamento e cor. </p>
+                    <p>Exemplo de uso da propriedade <strong>box-shadow</strong>:</p>
+                    <pre>
+                        <code>
+                            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+                        </code>
+                    </pre>
+                    <p>Isso cria uma sombra com deslocamento de 2 pixels para a direita e para baixo, um desfoque de 5 pixels e uma cor preta com 30% de opacidade.</p>
+                    <p>Você pode usar a propriedade <strong>box-shadow</strong> para adicionar sombras a elementos como caixas, botões e imagens.</p>
+                    <p>Exemplo de uso da propriedade <strong>box-shadow</strong>:</p>
+                    <pre>
+                        <code>
+                            .caixa {
+                                width: 200px;
+                                height: 100px;
+                                background-color: lightblue;
+                                box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+                            }
+                        </code>
+                    </pre>
+                    <p>Isso cria uma caixa com largura de 200 pixels, altura de 100 pixels, cor de fundo azul claro e uma sombra com deslocamento de 2 pixels para a direita e para baixo, um desfoque de 5 pixels e uma cor preta com 30% de opacidade.</p>
+                    <p>Você pode usar a propriedade <strong>box-shadow</strong> para adicionar sombras a elementos como caixas, botões e imagens.</p>
+                    <p>Exemplo de uso da propriedade <strong>box-shadow</strong>:</p>
+                    <pre>
+                        <code>
+                            .botao {
+                                padding: 10px 20px;
+                                background-color: blue;
+                                color: white;
+                                border: none;
+                                border-radius: 5px;
+                                box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+                            }
+                        </code>
+                    </pre>
+                    <p>Isso cria uma caixa com largura de 200 pixels, altura de 100 pixels, cor de fundo azul claro e uma sombra com deslocamento de 2 pixels para a direita e para baixo, um desfoque de 5 pixels e uma cor preta com 30% de opacidade.</p>
+                    <p>Você pode usar a propriedade <strong>box-shadow</strong> para adicionar sombras a elementos como caixas, botões e imagens.</p>
+                    <p>Exemplo de uso da propriedade <strong>box-shadow</strong>:</p>
+                    <pre>
+                        <code>
+                            .botao {
+                                padding: 10px 20px;
+                                background-color: blue;
+                                color: white;
+                                border: none;
+                                border-radius: 5px;
+                                box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+                            }
+                        </code>
+                    </pre>
+                    <p>Isso cria um botão com preenchimento de 10 pixels na parte superior e inferior e 20 pixels nas laterais, cor de fundo azul, texto branco, sem borda, bordas arredondadas de 5 pixels e uma sombra com deslocamento de 2 pixels para a direita e para baixo, um desfoque de 5 pixels e uma cor preta com 30% de opacidade.</p>
+                    <aside>
+                         <p>A tag <strong>aside</strong> é usada para agrupar conteúdo relacionado, mas que não faz parte do conteúdo principal da página.</p>
+                        <p>Por exemplo, você pode usar a tag <strong>aside</strong> para agrupar uma barra lateral com links relacionados, informações adicionais ou anúncios.É um conteúdo periférico ao artigo, relativo ao artigo.</p>
+                        <p>exemplo de uso da tag <strong>aside</strong>:</p>
+                            <aside>
+                                <h2>Barra Lateral</h2>
+                                <p>Links relacionados:</p>
+                                <ul>
+                                    <li><a href="#">Link 1</a></li>
+                                    <li><a href="#">Link 2</a></li>
+                                    <li><a href="#">Link 3</a></li>
+                                </ul>
+                            </aside>
+                    </aside>
+                
+                </article>
+                
+                
+                <article>
+                   
+
+
+                </article>
+            </section>
+            <p>A tag <strong>section</strong> é usada para agrupar conteúdo temático dentro de uma página.</p>
+            <p>Você pode usar a tag <strong>section</strong> para agrupar conteúdo relacionado, como notícias, artigos ou eventos.</p>
+            <p>Você pode usar a tag <strong>article</strong> para agrupar conteúdo independente, como artigos de blog ou notícias.</p>
+           
+            <p>Você pode usar a tag <strong>footer</strong> para agrupar o rodapé de uma página.</p>
+            <p>O rodapé geralmente contém informações de copyright, links de contato e outras informações relevantes.</p>
+            <p>Você pode usar a propriedade <strong>border-radius</strong> para adicionar bordas arredondadas a elementos como caixas, botões e imagens.</p>
+            <p>Exemplo de uso da propriedade <strong>border-radius</strong>:</p>
+            <pre>
+                <code>
+                    .caixa {
+                        width: 200px;
+                        height: 100px;
+                        background-color: lightblue;
+                        border-radius: 10px 20px 30px 40px;
+                    }
+                </code>
+            </pre>
+            <p>Isso cria uma caixa com largura de 200 pixels, altura de 100 pixels, cor de fundo azul claro e bordas arredondadas com raios de 10 pixels, 20 pixels, 30 pixels e 40 pixels nos cantos superior esquerdo, superior direito, inferior direito e inferior esquerdo, respectivamente.</p>
+            <p>Você pode usar a propriedade <strong>border-radius</strong> para adicionar bordas arredondadas a elementos como caixas, botões e imagens.</p>
+            <p>Exemplo de uso da propriedade <strong>border-radius</strong>:</p>
+            <pre>
+                <code>
+                    .botao {
+                        padding: 10px 20px;
+                        background-color: blue;
+                        color: white;
+                        border: none;
+                        border-radius: 5px;
+                    }
+                </code>
+            </pre>
+            <p>Isso cria um botão com preenchimento de 10 pixels na parte superior e inferior e 20 pixels nas laterais, cor de fundo azul, texto branco, sem borda e bordas arredondadas de 5 pixels.</p>
+
+
+
+        </main>
+        <footer>
+            <p>© 2023 Meu Site</p>
+            <p>Todos os direitos reservados.</p>
+            <p>Rodapé</p>
+        </footer>
+    </div>
+
+
+</body>
+</html>
