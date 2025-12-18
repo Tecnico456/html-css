@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+    <style>
+        #container { /* elemento pai */
+            background-image: url(imagens/target001.png); /* imagem de fundo */
+            background-size: 100% 100%; /* ajusta a imagem do background-image ao tamanho do container */
+            position: relative; /* necessário para o alinhamento absoluto do filho */
+            height: 96vh; /* altura definida da viewport que ocupa quase toda a tela , viewport é a área visível do navegador */
+            padding: 10px; /* espaçamento interno */
+            background-color: purple;  
+        }
+
+        #conteudo { /* elemento filho */
+            background-image: url(imagens/target001.png); /* imagem de fundo */
+            background-size: 100% 100%; /* ajusta a imagem do background-image ao tamanho do container */
+            position: absolute; /* posicionamento absoluto */
+            height: 200px; /* altura definida */
+            width: 400px; /* largura definida */
+            background-color: yellow;
+
+            left: 50%; /* posiciona o lado esquerdo do elemento filho no centro do elemento pai */
+            top: 50%; /* posiciona o topo do elemento filho no centro do elemento pai */
+
+            transform: translate(-50%, -50%); /* ajusta o elemento filho para que seu centro fique alinhado ao centro do elemento pai */
+        }
+    </style>
+
+
+</head>
+<body>
+    <section id="container"> <!-- elemento pai -->
+        <article id="conteudo"> <!-- elemento filho -->
+
+        </article>
+    </section>
+</body>
+</html>
