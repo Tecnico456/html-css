@@ -11,6 +11,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         th, td {
             border: 1px solid black;
@@ -18,10 +19,32 @@
             
         }
 
+        caption {
+            font-weight: bold;
+            font-size: 1.5em;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         thead, tfoot {
             background-color: gray;
             color: white;
         }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tbody > tr:nth-child(odd) {
+            background-color: #ffffff;
+        }
+
         td.num {
             text-align: right;
         }
@@ -33,6 +56,7 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE = TABELA
+            CAPTION = TÍTULO DA TABELA (LEGENDA DA TABELA)
             THEAD = CABEÇALHO DA TABELA
                 TR = LINHA DO CABEÇALHO
                 TD = CÉLULA DE DADOS DO CABEÇALHO
@@ -48,10 +72,11 @@
     -->
 
     <table>
+        <caption>População dos Estados Brasileiros - 2024</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>           
         </thead>
         <tbody>
@@ -147,7 +172,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <th class="num"><strong>213.317.639</strong></th>
             </tr>
         </tfoot>
