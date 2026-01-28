@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse; /* Remove espaços entre as bordas das células */
+            width: 300px; /* Define a largura da tabela */
+        }
+
+        td { /* Cria uma borda nas células */
+            border: 1px solid black;
+            padding: 10px; /* Adiciona espaçamento interno nas células */
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mesclagem de Células</h1>
+
+    <table> <!-- Cria uma tabela -->
+        <tr> <!-- Cria uma linha da tabela -->
+            <td>A</td> <!-- Cria uma célula da tabela -->
+            <td colspan="2">B</td> <!-- Cria uma célula que ocupa duas colunas -->
+            
+        </tr>
+        <tr> <!-- Cria uma linha da tabela -->
+            <td rowspan="3">D</td> <!-- Cria uma célula que ocupa três linhas -->
+            <td>E</td> <!-- Cria uma célula da tabela -->
+            <td rowspan="2">F</td> <!-- Cria uma célula que ocupa duas linhas -->
+        </tr>
+        <tr> <!-- Cria uma linha da tabela -->
+            
+            <td>H</td> <!-- Cria uma célula da tabela -->
+            
+        </tr>
+        <tr> <!-- Cria uma linha da tabela -->
+            
+            
+            <td colspan="2">M</td> <!-- Cria uma célula que ocupa duas colunas -->
+        </tr>
+    </table>
+</body>
+</html>
