@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas de Notas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse; /* Remove espaços entre as bordas das células */
+            margin: auto; /* Centraliza a tabela na página */
+            border: 1px solid black; /* Borda externa da tabela */
+            
+        }
+
+        caption {   /* Estiliza o título da tabela */
+            font-size: 1.5em;   
+            font-weight: bold;
+            margin: 10px;
+        }
+
+        thead th { /* Estiliza o cabeçalho da tabela */
+            border: 1px solid black;
+            padding: 10px; /* Adiciona espaçamento interno nas células */
+            text-align: center;
+            background-color: darkgray; /* Cor de fundo para o cabeçalho */
+            font-weight: bold; /* Deixa o texto em negrito */
+            color: white; /* Cor do texto para o cabeçalho */
+        }
+
+        td { /* Cria uma borda nas células */
+            border: 1px solid black;
+            padding: 10px; /* Adiciona espaçamento interno nas células */
+            text-align: center;
+        }
+
+        .media {    /* Estiliza as células de média */
+        text-align: left;   /* Alinha o texto à esquerda */
+        background-color: darkgray; /* Mantém o fundo igual ao cabeçalho */
+        font-weight: bold;  /* Deixa em negrito */
+        color: white;      /* Cor do texto para o rodapé */
+    }
+
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Tabela de Notas por Área</caption> <!-- Título da tabela -->
+        <thead> <!-- Cria uma linha do cabeçalho da tabela -->
+        <tr> <!-- Cria uma linha do cabeçalho da tabela -->
+            <th rowspan="2" scope="col">ÁREA</th> <!-- Cria uma célula do cabeçalho que ocupa duas linhas -->
+            <th rowspan="2" scope="col">DISCIPLINA</th> <!-- Cria uma célula do cabeçalho que ocupa duas linhas -->
+            <th colspan="2">NOTA</th> <!-- Cria uma célula do cabeçalho que ocupa duas colunas -->
+            <th rowspan="2" scope="col">MÉDIA</th> <!-- Cria uma célula do cabeçalho que ocupa duas linhas -->
+        </tr>
+        <tr>    <!-- Cria uma linha do cabeçalho da tabela -->
+            <th scope="col">Nota 1</th> <!-- Cria uma célula do cabeçalho para a primeira nota -->
+            <th scope="col">Nota 2</th> <!-- Cria uma célula do cabeçalho para a segunda nota -->
+        </tr>
+        </thead>
+        <tbody>
+        <tr> <!-- Cria uma linha da tabela -->
+            <th rowspan="4" scope="rowgroup">Exatas</th>    <!-- Cria uma célula que ocupa quatro linhas -->
+            <td>Matemática</td> <!-- Cria uma célula da tabela -->
+            <td>8.0</td>   <!-- Cria uma célula da tabela -->
+            <td>9.0</td>    <!-- Cria uma célula da tabela -->
+            <td>8.5</td>    <!-- Cria uma célula da tabela -->
+        </tr>
+        <tr>
+            <td>Física</td>
+            <td>7.0</td>
+            <td>8.0</td>
+            <td>7.5</td>
+        </tr>
+        <tr>
+            <td>Química</td>
+            <td>9.0</td>
+            <td>9.5</td>
+            <td>9.25</td>
+        </tr>
+        <tr>
+            <td>Biologia</td>
+            <td>8.5</td>
+            <td>9.0</td>
+            <td>8.75</td>
+        </tr>
+        <tr>
+            <th colspan="4" scope="colgroup" class="media">Média Exatas</th>    <!-- Cria uma célula do rodapé que ocupa quatro colunas -->
+            <td class="media">8.5</td>  <!-- Cria uma célula do rodapé para a média das notas de Exatas -->
+        </tr>
+        <tr>
+            <th rowspan="2" scope="rowgroup">Humanas</th>   <!-- Cria uma célula que ocupa duas linhas -->
+            <td>História</td>
+            <td>7.5</td>
+            <td>8.0</td>
+            <td>7.75</td>
+        </tr>
+        <tr>
+            <td>Geografia</td>
+            <td>8.0</td>
+            <td>8.5</td>
+            <td>8.25</td>
+        </tr>
+        <tr>
+            <th colspan="4" scope="colgroup" class="media">Média Humanas</th>   <!-- Cria uma célula do rodapé que ocupa quatro colunas -->
+            <td class="media">8.25</td> <!-- Cria uma célula do rodapé para a média das notas de Humanas -->
+        </tr>
+        </tbody>
+    </table>
+</body>
+</html>
