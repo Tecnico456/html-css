@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+        <form action="cadastro.php" method="post" autocomplete="on"> <!-- O atributo "action" define para onde os dados do formulário serão enviados quando o usuário clicar no botão de envio. Neste caso, os dados serão enviados para um arquivo chamado "cadastro.php". Esse arquivo deve estar presente no servidor e ser capaz de processar os dados recebidos do formulário. O atributo "method" especifica o método HTTP a ser usado ao enviar os dados do formulário. O valor "post" indica que os dados serão enviados no corpo da solicitação HTTP, o que é mais seguro para informações sensíveis. O atributo "autocomplete" controla se o navegador deve ou não preencher automaticamente os campos do formulário com base em entradas anteriores do usuário. O valor "on" permite que o navegador preencha automaticamente os campos, enquanto "off" desativa essa funcionalidade. -->
+
+            <p>
+                <label for="iusu">Usuário: </label>
+                <input type="text" name="usu" id="iusu" required minlength="5" maxlength="30" size="10" placeholder="nome do usuário" autocomplete="username"> <!-- O elemento <input> com o atributo "type" definido como "text" é usado para criar um campo de entrada de texto em um formulário. Os atributos "name", "id", "required", "minlength", "maxlength", "size", "placeholder" e "autocomplete" têm as seguintes funções:
+                    - "name": Define o nome do campo, que é usado para identificar os dados quando o formulário é enviado.
+                    - "id": Define um identificador único para o campo, que pode ser usado para associar um rótulo usando o elemento <label>.
+                    - "required": Indica que o campo é obrigatório e deve ser preenchido antes de enviar o formulário.
+                    - "minlength": Especifica o número mínimo de caracteres que o usuário deve digitar para que o formulário seja considerado válido.
+                    - "maxlength": Especifica o número máximo de caracteres que o usuário pode digitar.
+                    - "size": Define a largura do campo de entrada em caracteres.
+                    - "placeholder": Fornece um texto de dica que é exibido dentro do campo de entrada quando ele está vazio, ajudando o usuário a entender o que deve ser digitado.
+                    - "autocomplete": Controla se o navegador deve ou não preencher automaticamente os campos do formulário com base em entradas anteriores do usuário. O valor "username" indica que o campo é para o nome de usuário, permitindo que o navegador preencha automaticamente com base em entradas anteriores do usuário para campos de nome de usuário. -->     
+            </p>
+
+            <p>
+                <label for="isen">Senha</label>
+                <input type="password" name="sen" id="isen" required minlength="8" maxlength="30" size="10" placeholder="sua senha" autocomplete="current-password"> <!-- O elemento <input> com o atributo "type" definido como "password" é usado para criar um campo de entrada de senha em um formulário. Os atributos "name", "id", "required", "minlength", "maxlength", "size", "placeholder" e "autocomplete" têm as seguintes funções:
+                    - "name": Define o nome do campo, que é usado para identificar os dados quando o formulário é enviado.
+                    - "id": Define um identificador único para o campo, que pode ser usado para associar um rótulo usando o elemento <label>.
+                    - "required": Indica que o campo é obrigatório e deve ser preenchido antes de enviar o formulário.
+                    - "minlength": Especifica o número mínimo de caracteres que o usuário deve digitar para que o formulário seja considerado válido.
+                    - "maxlength": Especifica o número máximo de caracteres que o usuário pode digitar.
+                    - "size": Define a largura do campo de entrada em caracteres.
+                    - "placeholder": Fornece um texto de dica que é exibido dentro do campo de entrada quando ele está vazio, ajudando o usuário a entender o que deve ser digitado.
+                    - "autocomplete": Controla se o navegador deve ou não preencher automaticamente os campos do formulário com base em entradas anteriores do usuário. O valor "current-password" indica que o campo é para a senha atual do usuário, permitindo que o navegador preencha automaticamente com base em entradas anteriores do usuário para campos de senha. -->
+            </p>
+
+            <p>
+                <input type="submit" value="Enviar"> <!-- O elemento <input> com o atributo "type" definido como "submit" é usado para criar um botão de envio em um formulário. Quando o usuário clica nesse botão, os dados do formulário são enviados para o servidor, de acordo com as especificações definidas no atributo "action" do elemento <form>. O atributo "value" define o texto que será exibido no botão. Neste caso, o botão exibirá a palavra "Enviar". -->
+            
+                <input type="reset" value="Limpar"> <!-- O elemento <input> com o atributo "type" definido como "reset" é usado para criar um botão de redefinir em um formulário. Quando o usuário clica nesse botão, todos os campos do formulário são limpos e retornam aos seus valores padrão. O atributo "value" define o texto que será exibido no botão. Neste caso, o botão exibirá a palavra "Limpar". -->
+            </p>
+        </form>
+    
+</body>
+</html>

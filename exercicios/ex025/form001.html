@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Meu Primeiro Formulário</h1>
+
+    <form action="cadastro.php"> <!-- O atributo "action" define para onde os dados do formulário serão enviados quando o usuário clicar no botão de envio. Neste caso, os dados serão enviados para um arquivo chamado "cadastro.php". Esse arquivo deve estar presente no servidor e ser capaz de processar os dados recebidos do formulário. O método padrão para enviar os dados é "GET", mas é possível especificar o método "POST" usando o atributo "method" (por exemplo, method="post") para enviar os dados de forma mais segura e adequada para formulários que contêm informações sensíveis. -->
+
+        <p><label for="inome">Nome:</label> <!-- O elemento <label> é usado para associar um rótulo a um elemento de formulário, como um campo de entrada. O atributo "for" do <label> deve corresponder ao atributo "id" do elemento de formulário que ele está rotulando. Isso melhora a acessibilidade, permitindo que os usuários cliquem no rótulo para focar o campo de entrada correspondente. Neste caso, o rótulo "Nome:" está associado ao campo de entrada com id "inome". -->
+            <input type="text" name="Nome" id="inome"></p>
+
+        <p><label for="isobrenome">Sobrenome:</label> <!-- O elemento <label> é usado para associar um rótulo a um elemento de formulário, como um campo de entrada. O atributo "for" do <label> deve corresponder ao atributo "id" do elemento de formulário que ele está rotulando. Isso melhora a acessibilidade, permitindo que os usuários cliquem no rótulo para focar o campo de entrada correspondente. Neste caso, o rótulo "Sobrenome:" está associado ao campo de entrada com id "isobrenome". -->
+            <input type="text" name="Sobrenome" id="isobrenome"></p>
+
+        <p><input type="submit" value="Enviar"></p> <!-- O elemento <input> com o atributo "type" definido como "submit" é usado para criar um botão de envio em um formulário. Quando o usuário clica nesse botão, os dados do formulário são enviados para o servidor, de acordo com as especificações definidas no atributo "action" do elemento <form>. O atributo "value" define o texto que será exibido no botão. Neste caso, o botão exibirá a palavra "Enviar". -->
+    </form>
+    
+</body>
+</html>
