@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    
+    <form action="cadastro.php" method="get" autocomplete="on"></form> <!-- 
+        FORMA DE ENVIO DE DADOS:
+        
+        action="cadastro.php"
+        → Define o arquivo/caminho no servidor que irá processar os dados do formulário
+        
+        method="get"
+        → Define o método HTTP para envio dos dados (GET envia dados pela URL, visível e com limite de caracteres)
+        
+        autocomplete="on"
+        → Ativa o preenchimento automático dos campos baseado no histórico do navegador
+    -->
+
+    <p>
+        <label for="inome">Nome</label> <!--
+            → O atributo "for" do label deve corresponder ao "id" do input para garantir acessibilidade e associação correta entre o rótulo e o campo de entrada
+        -->
+        <input type="text" name="Nome" id="inome" required maxlength="30" placeholder="Nome Completo" autocomplete="name" required> <!--
+            type="text" → Define o tipo do campo como texto
+            name="Nome" → Define o nome do campo, que será usado como chave para acessar o valor enviado
+            id="inome" → Define um identificador único para o campo, usado para associar com o label
+            required → Torna o preenchimento do campo obrigatório
+            maxlength="30" → Limita a quantidade de caracteres que podem ser inseridos a 30
+            placeholder="Nome Completo" → Exibe um texto de dica dentro do campo quando ele está vazio
+            autocomplete="name" → Sugere ao navegador que use informações de nome para preenchimento automático-->
+    </p>
+
+    <p>
+        <label for="imedia">Média</label> <!--
+            → O atributo "for" do label deve corresponder ao "id" do input para garantir acessibilidade e associação correta entre o rótulo e o campo de entrada
+        -->
+        <input type="number" name="Media" id="imedia" required min="0" max="10" step="0.1" placeholder="0 a 10" required> <!--
+            type="number" → Define o tipo do campo como numérico, permitindo apenas a entrada de números
+            name="Media" → Define o nome do campo para acesso posterior
+            id="imedia" → Define um identificador único para o campo, usado para associar com o label
+            required → Torna o preenchimento do campo obrigatório
+            min="0" → Define o valor mínimo permitido como 0
+            max="10" → Define o valor máximo permitido como 10
+            step="0.1" → Permite incrementos de 0.1, ou seja, valores decimais entre 0 e 10
+            placeholder="0 a 10" → Exibe um texto de dica dentro do campo quando ele está vazio -->
+    </p>
+
+    <p>
+        <label for="imes">Período Letivo</label>
+        <input type="month" name="mes" id="imes" required> <!--
+            type="month" → Define o tipo do campo como mês, permitindo a seleção de um mês e ano específicos
+            name="mes" → Define o nome do campo para acesso posterior
+            id="imes" → Define um identificador único para o campo, usado para associar com o label
+            required → Torna o preenchimento do campo obrigatório -->
+    </p>
+
+    <p>
+        <label for="idia">Dia da Prova</label>
+        <input type="date" name="dia" id="idia" required> <!--
+            type="date" → Define o tipo do campo como data, permitindo a seleção de uma data específica
+            name="dia" → Define o nome do campo para acesso posterior
+            id="idia" → Define um identificador único para o campo, usado para associar com o label
+            required → Torna o preenchimento do campo obrigatório -->
+    </p>
+    
+    <p>
+        <label for="ihora">Hora da Prova</label>
+        <input type="time" name="hora" id="ihora" required> <!--
+            type="time" → Define o tipo do campo como hora, permitindo a seleção de um horário específico
+            name="hora" → Define o nome do campo para acesso posterior
+            id="ihora" → Define um identificador único para o campo, usado para associar com o label
+            required → Torna o preenchimento do campo obrigatório -->
+    </p>
+    
+    <p>
+        <input type="submit" value="Enviar"> <!--
+            input → Define um campo de entrada, neste caso, um botão
+            type="submit" → Define o botão como um botão de envio, que quando clicado, envia os dados do formulário para o servidor
+            value="Enviar" → Define o texto exibido no botão -->
+        <input type="reset" value="Limpar"> <!--
+            type="reset" → Define o botão como um botão de reset, que quando clicado, limpa todos os campos do formulário, retornando-os ao estado inicial
+            value="Limpar" → Define o texto exibido no botão -->
+    </p>
+</body>
+</html>
