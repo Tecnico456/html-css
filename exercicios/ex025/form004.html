@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" name="Nome" id="inome" required maxlength="30" placeholder="Nome Completo" autocomplete="name"> <!--
+                    type="text" → Define o tipo do campo como texto
+                    name="Nome" → Define o nome do campo, que será usado como chave para acessar o valor enviado
+                    id="inome" → Define um identificador único para o campo, usado para associar com o label
+                    required → Torna o preenchimento do campo obrigatório
+                    maxlength="30" → Limita a quantidade de caracteres que podem ser inseridos a 30
+                    placeholder="Nome Completo" → Exibe um texto de dica dentro do campo quando ele está vazio
+                    autocomplete="name" → Sugere ao navegador que use informações de nome para preenchimento automático -->
+            </p>
+            <p>
+                <label for="iemail">Email</label>
+                <input type="email" name="email" id="iemail" required placeholder="Digite seu email" autocomplete="email"> <!--
+                    type="email" → Define o tipo do campo como email, validando a entrada para garantir que seja um endereço de email válido
+                    name="email" → Define o nome do campo para acesso posterior
+                    id="iemail" → Define um identificador único para o campo, usado para associar com o label
+                    required → Torna o preenchimento do campo obrigatório
+                    placeholder="Digite seu email" → Exibe um texto de dica dentro do campo quando ele está vazio -->
+            </p>
+            <p>
+                <label for="itel">Telefone</label>
+               <input type="tel" name="tel" id="itel" required placeholder="Digite seu telefone" autocomplete="tel" pattern="[0-9]{2}-[0-9]{4,5}-[0-9]{4}"> <!--
+                    type="tel" → Define o tipo do campo como telefone, permitindo a entrada de números de telefone
+                    name="tel" → Define o nome do campo para acesso posterior
+                    id="itel" → Define um identificador único para o campo, usado para associar com o label
+                    required → Torna o preenchimento do campo obrigatório
+                    placeholder="Digite seu telefone" → Exibe um texto de dica dentro do campo quando ele está vazio
+                    autocomplete="tel" → Sugere ao navegador que use informações de telefone para preenchimento automático
+                    pattern="[0-9]{2}-[0-9]{4,5}-[0-9]{4}" → Define um padrão de validação para o número de telefone, exigindo um formato específico (ex: 12-3456-7890 ou 12-34567-8901) -->
+            </p>
+        </fieldset>
+
+                            <!-- Estudar mais sobre RegEX -->
+        
+        <p>
+            <input type="submit" value="Enviar"> <!--
+                type="submit" → Define o tipo do botão como submit, que envia os dados do formulário para o servidor quando clicado
+                value="Enviar" → Define o texto exibido no botão -->
+            <input type="reset" value="Limpar"> <!--
+                type="reset" → Define o tipo do botão como reset, que limpa todos os campos do formulário quando clicado
+                value="Limpar" → Define o texto exibido no botão -->
+        </p>
+
+    </form>
+</body>
+</html>
