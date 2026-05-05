@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on"> <!--
+        action="cadastro.php" → Especifica o URL para onde os dados do formulário serão enviados quando o formulário for submetido
+        method="get" → Define o método HTTP usado para enviar os dados do formulário, neste caso, GET, que anexa os dados à URL como parâmetros de consulta
+        autocomplete="on" → Permite que o navegador sugira e preencha automaticamente os campos do formulário com base em entradas anteriores do usuário -->
+
+        <fieldset> <!--
+            O elemento <fieldset> é usado para agrupar elementos relacionados dentro de um formulário, criando uma seção visualmente distinta. Ele é frequentemente usado para organizar campos de entrada relacionados, como informações pessoais, detalhes de pagamento, etc. O uso do <fieldset> melhora a legibilidade e a estrutura do formulário, tornando-o mais fácil de entender e preencher para os usuários. -->
+            <legend>Sexo</legend> <!--
+                O elemento <legend> é usado para fornecer um título ou descrição para o conteúdo dentro de um <fieldset>. Ele ajuda a identificar o propósito do grupo de campos relacionados, tornando o formulário mais acessível e fácil de entender para os usuários. No exemplo, "Sexo" é o título do grupo de opções de gênero. -->
+
+            <input type="radio" name="sexo" id="isxmas" value="Masc"> 
+            <label for="isxmas">Masculino</label> <!--
+                type="radio" → Define o tipo do campo como botão de opção (radio button), permitindo que o usuário selecione apenas uma opção dentro de um grupo
+                name="sexo" → Define o nome do campo, que é usado para agrupar os botões de opção relacionados. Todos os botões de opção com o mesmo nome pertencem ao mesmo grupo, permitindo que apenas um seja selecionado
+                id="isxmas" → Define um identificador único para o campo, usado para associar com o label
+                <label for="isxmas">Masculino</label> → O elemento <label> é usado para associar um rótulo descritivo a um elemento de formulário. O atributo for="isxmas" vincula o rótulo ao campo de entrada correspondente, melhorando a acessibilidade e a usabilidade do formulário . -->
+            
+            <input type="radio" name="sexo" id="isxfem" value="Fem" checked>
+            <label for="isxfem">Feminino</label> <!--
+                type="radio" → Define o tipo do campo como botão de opção (radio button), permitindo que o usuário selecione apenas uma opção dentro de um grupo
+                name="sexo" → Define o nome do campo, que é usado para agrupar os botões de opção relacionados. Todos os botões de opção com o mesmo nome pertencem ao mesmo grupo, permitindo que apenas um seja selecionado
+                id="isxfem" → Define um identificador único para o campo, usado para associar com o label
+                <label for="isxfem">Feminino</label> → O elemento <label> é usado para associar um rótulo descritivo a um elemento de formulário. O atributo for="isxfem" vincula o rótulo ao campo de entrada correspondente, melhorando a acessibilidade e a usabilidade do formulário. -->
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+
+            <input type="checkbox" name="esbas" id="iesbas"> <label for="iesbas">Basquete</label><br> <!--
+                type="checkbox" → Define o tipo do campo como caixa de seleção (checkbox), permitindo que o usuário selecione uma ou mais opções dentro de um grupo
+                name="esbas" → Define o nome do campo, que é usado para identificar a opção selecionada quando o formulário é submetido. Cada caixa de seleção com o mesmo nome é tratada como parte do mesmo grupo, permitindo múltiplas seleções
+                id="iesbas" → Define um identificador único para o campo, usado para associar com o label
+                <label for="iesbas">Basquete</label> → O elemento <label> é usado para associar um rótulo descritivo a um elemento de formulário. O atributo for="iesbas" vincula o rótulo ao campo de entrada correspondente, melhorando a acessibilidade e a usabilidade do formulário. -->
+            <input type="checkbox" name="esfut" id="iesfut"> <label for="iesfut">Futebol</label><br> <!--
+                type="checkbox" → Define o tipo do campo como caixa de seleção (checkbox), permitindo que o usuário selecione uma ou mais opções dentro de um grupo
+                name="esfut" → Define o nome do campo, que é usado para identificar a opção selecionada quando o formulário é submetido. Cada caixa de seleção com o mesmo nome é tratada como parte do mesmo grupo, permitindo múltiplas seleções
+                id="iesfut" → Define um identificador único para o campo, usado para associar com o label
+                <label for="iesfut">Futebol</label> → O elemento <label> é usado para associar um rótulo descritivo a um elemento de formulário. O atributo for="iesfut" vincula o rótulo ao campo de entrada correspondente, melhorando a acessibilidade e a usabilidade do formulário. -->
+            <input type="checkbox" name="esvolei" id="iesvolei"> <label for="iesvolei">Vôlei</label><br> <!--
+                type="checkbox" → Define o tipo do campo como caixa de seleção (checkbox), permitindo que o usuário selecione uma ou mais opções dentro de um grupo
+                name="esvolei" → Define o nome do campo, que é usado para identificar a opção selecionada quando o formulário é submetido. Cada caixa de seleção com o mesmo nome é tratada como parte do mesmo grupo, permitindo múltiplas seleções
+                id="iesvolei" → Define um identificador único para o campo, usado para associar com o label
+                <label for="iesvolei">Vôlei</label> → O elemento <label> é usado para associar um rótulo descritivo a um elemento de formulário. O atributo for="iesvolei" vincula o rótulo ao campo de entrada correspondente, melhorando a acessibilidade e a usabilidade do formulário. -->
+            
+            <input type="checkbox" name="esnat" id="iesnat"> <label for="iesnat">Natação</label><br>
+
+            <input type="checkbox" name="esten" id="iesten"> <label for="iesten">Tênis</label><br>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar"> <!--
+                type="submit" → Define o tipo do botão como submit, que envia os dados do formulário para o servidor quando clicado
+                value="Enviar" → Define o texto exibido no botão -->
+            <input type="reset" value="Limpar"> <!--
+                type="reset" → Define o tipo do botão como reset, que limpa todos os campos do formulário quando clicado
+                value="Limpar" → Define o texto exibido no botão -->
+        </p>
+
+    </form>
+</body>
+</html>
