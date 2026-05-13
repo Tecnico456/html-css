@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+        <p>
+            <label for="iest">Estado</label>
+            <select name="estado" id="iest">
+                 <option value="">Selecione um estado</option>
+                 
+                <optgroup label="Região Sudeste">
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="ES">Espírito Santo</option>
+                </optgroup>
+
+                <optgroup label="Região Nordeste">
+                    <option value="MA">Maranhão</option>
+                    <option value="PI">Piauí</option>
+                    <option value="CE">Ceará</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="PB">Paraíba</option>
+                </optgroup>
+
+            </select> 
+        </p>
+
+            <label for="iprof">Profissão:</label> <!--
+                O elemento <label> é usado para associar um rótulo descritivo a um elemento de formulário. O atributo for="iprof" vincula o rótulo ao campo de entrada correspondente, melhorando a acessibilidade e a usabilidade do formulário. -->
+            <input type="text" name="prof" id="iprof" placeholder="Digite sua profissão" required list="lsprof"> <!--
+                type="text" → Define o tipo do campo como um campo de texto, permitindo que o usuário insira uma linha de texto
+                name="prof" → Define o nome do campo, que é usado para identificar a opção selecionada quando o formulário é submetido
+                id="iprof" → Define um identificador único para o campo, usado para associar com o label
+                placeholder="Digite sua profissão" → Fornece um texto de dica dentro do campo de entrada, indicando ao usuário o que deve ser inserido. O texto desaparece quando o usuário começa a digitar
+                required → Indica que o campo é obrigatório e deve ser preenchido antes de enviar o formulário
+                list="lsprof" → Associa o campo de entrada a uma lista de opções predefinidas, permitindo que o usuário escolha uma opção da lista ou insira um valor personalizado. A lista de opções é definida pelo elemento <datalist> com o id correspondente (lsprof). -->
+                           
+            <datalist id="lsprof"> <!--
+                O elemento <datalist> é usado para fornecer uma lista de opções predefinidas para um campo de entrada associado. Ele é referenciado pelo atributo list do campo de entrada, permitindo que o usuário escolha uma opção da lista ou insira um valor personalizado. No exemplo, a lista de profissões inclui opções como Administrador, Desenvolvedor, Médico, etc. -->
+                <option value="ADM">Administrador</option>
+                <option value="DEV">Desenvolvedor</option>
+                <option value="MED">Médico</option>
+                <option value="PRO">Professor</option>
+                <option value="ENG">Engenheiro</option>
+                <option value="OUT">Outro</option>
+            </datalist>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+        <p>
+            <label for="imsg">Mensagem:</label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Digite sua mensagem"></textarea> <!--
+                type="textarea" → Define o tipo do campo como uma área de texto, permitindo que o usuário insira várias linhas de texto
+                name="msg" → Define o nome do campo, que é usado para identificar a opção selecionada quando o formulário é submetido
+                id="imsg" → Define um identificador único para o campo, usado para associar com o label
+                placeholder="Digite sua mensagem" → Fornece um texto de dica dentro do campo de entrada, indicando ao usuário o que deve ser inserido. O texto desaparece quando o usuário começa a digitar -->
+        </p>
+
+    </form>
+
+</body>
+</html>
