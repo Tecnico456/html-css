@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+/* eSTILO PARA TELAS */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html { /* Apliquei uma fonte sans-serif para uma melhor leitura em telas */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+header { /* Adicionei um fundo cinza claro para o cabeçalho */
+    background-color: lightgrey
+}
+
+header > h1 { /* Centralizei o título do cabeçalho e adicionei um pouco de espaçamento */
+    text-align: center;
+    padding: 20px;
+}
+
+menu { /* Estilizei o menu para parecer uma barra de navegação horizontal */
+    list-style-type: none;
+    background-color: gray;
+}
+
+menu li { /* Estilizei os itens do menu para parecerem botões */
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(71, 71, 71);
+    color: white;
+} 
+
+article { /* Ajuste a largura do artigo para uma melhor leitura em telas */
+    width: 600px;
+    display: block;
+    margin: auto;
+}

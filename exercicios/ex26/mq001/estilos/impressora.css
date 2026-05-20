@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+/* ESTILO PARA IMPRESSORAS */
+
+* {
+    margin: 10px;
+    padding: 10px;
+}
+
+html { /* Apliquei uma fonte monoespaçada para simular a aparência de uma impressão */
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+menu { /* Esconda o menu durante a impressão */
+    display: none;
+}
+
+article::after { /* Adicione um rodapé com o número da página e uma mensagem personalizada */
+    content: " - Página " counter(page);
+    content: "Este artigo foi impresso através do site Exercicio de Media Query";
+    display: block;
+    text-align: right;
+    font-size: 0.8em;
+    margin-top: 20px;
+}
+
+article { /* Ajuste a largura do artigo para ocupar toda a página durante a impressão */
+    width: 100%;
+    display: block;
+    margin: auto;
+}
