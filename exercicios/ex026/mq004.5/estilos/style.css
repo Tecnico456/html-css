@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+/* Versão Mobile First */
+
+* { /* Reset CSS */
+    font-family: Arial, Helvetica, sans-serif; /* Define a fonte para todo o documento */
+    font-size: 1em; /* Define o tamanho da fonte para todo o documento */
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o preenchimento padrão */
+    box-sizing: border-box; /* Inclui a borda e o preenchimento na largura e altura total */
+}
+
+html {
+    height: 100vh; /* Define a altura do body e html para 100% da altura da viewport */
+}
+
+body {
+    background: black url(../imagens/back-phone.jpg) no-repeat;
+    background-size: cover; /* Faz a imagem de fundo cobrir toda a área do body */
+    background-position: center center; /* Centraliza a imagem de fundo */
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.842);
+    width: 90vw; /* Define a largura do main para 90% da largura da viewport */
+    margin: auto; /* Centraliza o main horizontalmente */
+    margin-top: 20px; /* Centraliza o main verticalmente */
+    border-radius: 10px; /* Adiciona bordas arredondadas ao main */
+    padding: 10px; /* Adiciona preenchimento interno ao main */
+}
+
+h1 {
+    text-align: center; /* Centraliza o texto do h1 */
+    color: white; /* Define a cor do texto do h1 como branco */
+    font-size: 2em; /* Define o tamanho da fonte do h1 */
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.493); /* Adiciona uma sombra ao texto do h1 */
+}
+
+img {
+    display: block; /* Exibe as imagens como blocos */
+    margin: auto; /* Centraliza as imagens horizontalmente */
+}
+
+img#phone { display: block; }
+img#tablet { display: none; }
+img#print { display: none; }
+img#pc { display: none; }
+img#tv { display: none; }
