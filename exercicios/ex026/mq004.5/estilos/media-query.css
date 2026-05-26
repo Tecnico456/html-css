@@ -2,6 +2,74 @@
 
 /* Todas as demais mídias */
 
+/* Poesquisar sobre Typical Dvices Breakpoints que são os breakpoints mais comuns para dispositivos móveis, tablets e desktops; breakpoints são os pontos de quebra onde o layout do site se adapta para diferentes tamanhos de tela. */
+
+
+/* Os Typical Dvices Breakpoints são os seguintes:
+-----------------------------------------------------------------
+Pequnas telas: até 600px
+Celulares: 600px a 768px
+Tablets: 768px a 992px
+Desktops: 992px a 1200px
+Grandes telas: acima de 1200px
+*/
+
 @media print {
+    *{
+        font-family: 'Courier New', Courier, monospace; /* Define a fonte para impressão */
+    }
+
+    body {
+        background-image: url(../imagens/back-print.jpg); /* Define a imagem de fundo para impressão */
+    }
+
+    main {
+        border: 2px solid black; /* Adiciona uma borda ao main para impressão */
+    }
+
+    main::after {
+        content: 'Essa impressão foi feita utilizando a media query print'; /* Adiciona um texto após o main para impressão */
+    }
+
+    main h1 {
+        text-shadow: none; /* Remove a sombra do texto para impressão */
+        color: black; /* Define a cor do texto para impressão */
+    }
     
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+            img#phone { display: none; }
+            img#tablet { display: block; }
+            img#print { display: none; }
+            img#pc { display: none; }
+            img#tv { display: none; }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+            img#phone { display: none; }
+            img#tablet { display: none; }
+            img#print { display: none; }
+            img#pc { display: block; }
+            img#tv { display: false; }
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+            img#phone { display: none; }
+            img#tablet { display: none; }
+            img#print { display: none; }
+            img#pc { display: none; }
+            img#tv { display: block; }
 }
