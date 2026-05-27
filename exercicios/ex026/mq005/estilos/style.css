@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+* { /* O seletor universal (*) é usado para selecionar todos os elementos da página. */
+     margin: 0; /* Remove as margens padrão de todos os elementos */
+     padding: 0; /* Remove o preenchimento padrão de todos os elementos */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: lightgrey;
+}
+
+header {
+    background-color: rgb(148, 148, 148);
+}
+
+header > h1 {
+    padding: 10px;
+    text-align: center;
+}
+
+menu {
+    display: block; /* Para garantir que o menu seja exibido como um bloco isso faz com que o menu ocupe toda a largura disponível */
+}
+
+menu > ul {
+    list-style-type: none; /* Remove os marcadores de lista como os pontos, números, asteriscos, etc. */
+}
+
+menu > ul > li > a { /* Seleciona os links dentro dos itens de lista do menu */
+    display: block; /* Exibe os links como blocos para que ocupem toda a largura disponível */
+    padding: 10px; /* Adiciona um pouco de espaço interno para tornar os links mais clicáveis */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    text-align: center; /* Centraliza o texto dos links */
+    background-color: rgb(87, 87, 87);
+    color: white; /* Define a cor do texto dos links como branco */
+    border-top: 2px solid gray; /* Adiciona uma borda superior preta para separar os links */
+}
+
+menu > ul > li > a:hover { /* Aplica estilos quando o mouse estiver sobre os links do menu */
+    background-color: gray; /* Mantém a cor de fundo dos links */
+    color: white; /* Mantém a cor do texto dos links como branco */
+    border-top: 2px solid black; /* Altera a borda superior para preto quando o mouse estiver sobre os links */
+}
+
+main {
+    width: 90vw; /* Define a largura do main como 90% da largura da janela de visualização */
+    background-color: white; /* Define a cor de fundo do main como branco */
+    margin: auto; /* Centraliza o main horizontalmente */
+    margin-top: 10px; /* Adiciona uma margem superior para separar o main do header */
+    padding: 10px; /* Adiciona um pouco de espaço interno ao main */
+    border-radius: 10px; /* Adiciona cantos arredondados ao main */
+}
+
+article > h2 { /* Seleciona os títulos de segundo nível dentro dos artigos */
+    padding-bottom: 20px; /* Adiciona uma margem inferior para separar o título do conteúdo */
+}
+
+article > p { /* Seleciona os parágrafos dentro dos artigos */
+    text-align: justify; /* Justifica o texto dos parágrafos para criar um layout mais limpo */
+    margin-bottom: 20px; /* Adiciona uma margem inferior para separar os parágrafos */
+    text-indent: 20px; /* Adiciona uma indentação na primeira linha de cada parágrafo para melhorar a legibilidade */
+    line-height: 1.5; /* Define a altura da linha para melhorar a legibilidade do texto */
+}
