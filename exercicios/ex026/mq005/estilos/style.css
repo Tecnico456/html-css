@@ -19,8 +19,22 @@ header > h1 {
     text-align: center;
 }
 
+#burguer {
+    background-color: rgb(48, 48, 48); /* Define a cor de fundo do ícone de menu hambúrguer como cinza */
+    display: block; /* Exibe o ícone de menu hambúrguer como um bloco para que ocupe toda a largura disponível */
+    color: white; /* Define a cor do ícone de menu hambúrguer como branco */
+    padding: 10px; /* Adiciona um pouco de espaço interno ao ícone de menu hambúrguer para torná-lo mais clicável */
+    text-align: center; /* Centraliza o ícone de menu hambúrguer */
+    cursor: pointer; /* Altera o cursor para indicar que o ícone de menu hambúrguer é clicável */
+}
+
+#burguer:hover { /* Aplica estilos quando o mouse estiver sobre o ícone de menu hambúrguer */
+    background-color: white; /* Altera a cor de fundo do ícone de menu hambúrguer para branco quando o mouse estiver sobre ele */
+    color: black; /* Altera a cor do ícone de menu hambúrguer para preto quando o mouse estiver sobre ele */
+}
+
 menu {
-    display: block; /* Para garantir que o menu seja exibido como um bloco isso faz com que o menu ocupe toda a largura disponível */
+    display: none; /* Oculta o menu por padrão, para que ele só seja exibido quando o ícone de menu hambúrguer for clicado */
 }
 
 menu > ul {
