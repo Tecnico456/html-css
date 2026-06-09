@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+/* Typical Device Breakpoints 
+    320px — 480px: Mobile devices
+    481px — 768px: iPads, Tablets
+    769px — 1024px: Small screens, laptops
+    1025px — 1200px: Desktops, large screens
+    1201px and more — Extra large screens, TVs
+*/
+
+@media screen and (min-width: 768px) { /* Aplica os estilos dentro deste bloco apenas para telas com largura mínima de 768 pixels, ou seja, para tablets e dispositivos maiores */
+    #burguer { /* Seleciona o elemento com o ID "burguer", que é o ícone de menu hambúrguer */
+        display: none; /* Oculta o ícone de menu hambúrguer em telas maiores, pois o menu será exibido diretamente */
+    }
+
+    menu { /* Seleciona o elemento "menu", que é a barra de navegação */
+        display: block; /* Exibe o menu como um bloco em telas maiores, tornando-o visível sem a necessidade do ícone de menu hambúrguer */
+    }
+}
+
+menu > ul > li { /* Seleciona os itens de lista dentro do menu */
+    display: inline-block; /* Exibe os itens de lista do menu como blocos em linha, permitindo que eles fiquem lado a lado em telas maiores */
+}
