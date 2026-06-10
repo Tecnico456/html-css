@@ -21,3 +21,7 @@
 menu > ul > li { /* Seleciona os itens de lista dentro do menu */
     display: inline-block; /* Exibe os itens de lista do menu como blocos em linha, permitindo que eles fiquem lado a lado em telas maiores */
 }
+
+main {
+    width: 768px; /* Define a largura do elemento "main" para 768 pixels, limitando seu tamanho em telas maiores */
+}
