@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.container01 {
+            background-color: lightsalmon;
+
+            display: flex; /* Ativa o Flexbox */
+            flex-direction: row; /* Define a direção dos itens como linha */
+            flex-wrap: nowrap; /* Define que os itens não devem quebrar para a próxima linha */
+        }
+
+        div.container02 {
+            background-color: lightgreen;
+
+            display: flex; /* Ativa o Flexbox */
+            flex-direction: row; /* Define a direção dos itens como linha */
+            flex-wrap: wrap; /* Define que os itens podem quebrar para a próxima linha */
+        }
+        
+        div.container03 {
+            background-color: lightcoral;
+
+            display: flex; /* Ativa o Flexbox */
+            flex-direction: row; /* Define a direção dos itens como linha */
+            flex-wrap: wrap-reverse; /* Define que os itens podem quebrar para a próxima linha, mas na ordem inversa */
+        }
+
+        div.container04 {
+            background-color: lightyellow;
+
+            display: flex; /* Ativa o Flexbox */
+            flex-direction: row-reverse; /* Define a direção dos itens como linha, mas na ordem invers a */
+            flex-wrap: wrap; /* Define que os itens podem quebrar para a próxima linha */
+        }
+
+        div.container05 {
+            background-color: lightpink;
+
+            display: flex; /* Ativa o Flexbox */
+            flex-direction: row-reverse; /* Define a direção dos itens como linha, mas na ordem invers a */
+            flex-wrap: wrap-reverse; /* Define que os itens podem quebrar para a próxima linha, mas na ordem inversa */
+        }
+
+        div.container06 {
+            background-color: lightyellow;
+
+            display: flex; /* Ativa o Flexbox */
+            flex-flow: row wrap; /* Define a direção dos itens como linha e permite que eles quebrem para a próxima linha, é uma forma abreviada de definir flex-direction e flex-wrap */
+        }
+
+        div.container07 {
+            background-color: lightgray;
+
+            display: flex; /* Ativa o Flexbox */
+            flex-flow: row-reverse wrap; /* Define a direção dos itens como linha, mas na ordem inversa e permite que eles quebrem para a próxima linha, é uma forma abreviada de definir flex-direction e flex-wrap */
+        }
+
+        div.container08 {
+            background-color: lightyellow;
+
+            display: flex; /* Ativa o Flexbox */
+            flex-flow: row wrap-reverse; /* Define a direção dos itens como linha e permite que eles quebrem para a próxima linha, mas na ordem inversa, é uma forma abreviada de definir flex-direction e flex-wrap */
+        }
+
+        div.item {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+
+         
+        }
+    </style>
+</head>
+<body>
+    <div class="container01">
+        <div class="item">Exemplo de bloco A</div>
+        <div class="item">Exemplo de bloco B</div>
+        <div class="item">Exemplo de bloco C</div>
+        <div class="item">Exemplo de bloco D</div>
+        <div class="item">Exemplo de bloco E</div>
+        <div class="item">Exemplo de bloco F</div>
+        <div class="item">Exemplo de bloco G</div>
+    </div> <br> <br>
+
+    <div class="container02">
+        <div class="item">Exemplo de bloco A</div>
+        <div class="item">Exemplo de bloco B</div>
+        <div class="item">Exemplo de bloco C</div>
+        <div class="item">Exemplo de bloco D</div>
+        <div class="item">Exemplo de bloco E</div>
+        <div class="item">Exemplo de bloco F</div>
+        <div class="item">Exemplo de bloco G</div>
+    </div> <br> <br>
+
+    <div class="container03">
+        <div class="item">Exemplo de bloco A</div>
+        <div class="item">Exemplo de bloco B</div>
+        <div class="item">Exemplo de bloco C</div>
+        <div class="item">Exemplo de bloco D</div>
+        <div class="item">Exemplo de bloco E</div>
+        <div class="item">Exemplo de bloco F</div>
+        <div class="item">Exemplo de bloco G</div>
+    </div> <br> <br>
+
+    <div class="container04">
+        <div class="item">Exemplo de bloco A</div>
+        <div class="item">Exemplo de bloco B</div>
+        <div class="item">Exemplo de bloco C</div>
+        <div class="item">Exemplo de bloco D</div>
+        <div class="item">Exemplo de bloco E</div>
+        <div class="item">Exemplo de bloco F</div>
+        <div class="item">Exemplo de bloco G</div>
+    </div> <br> <br>
+
+    <div class="container05">
+        <div class="item">Exemplo de bloco A</div>
+        <div class="item">Exemplo de bloco B</div>
+        <div class="item">Exemplo de bloco C</div>
+        <div class="item">Exemplo de bloco D</div>
+        <div class="item">Exemplo de bloco E</div>
+        <div class="item">Exemplo de bloco F</div>
+        <div class="item">Exemplo de bloco G</div>
+    </div> <br> <br>
+
+    <div class="container06">
+        <div class="item">Exemplo de bloco A</div>
+        <div class="item">Exemplo de bloco B</div>
+        <div class="item">Exemplo de bloco C</div>
+        <div class="item">Exemplo de bloco D</div>
+        <div class="item">Exemplo de bloco E</div>
+        <div class="item">Exemplo de bloco F</div>
+        <div class="item">Exemplo de bloco G</div> 
+    </div> <br> <br>
+
+   <div class="container07">
+        <div class="item">Exemplo de bloco A</div>
+        <div class="item">Exemplo de bloco B</div>
+        <div class="item">Exemplo de bloco C</div>
+        <div class="item">Exemplo de bloco D</div>
+        <div class="item">Exemplo de bloco E</div>
+        <div class="item">Exemplo de bloco F</div>
+        <div class="item">Exemplo de bloco G</div> 
+    </div> <br> <br>
+
+    <div class="container08">
+        <div class="item">Exemplo de bloco A</div>
+        <div class="item">Exemplo de bloco B</div>
+        <div class="item">Exemplo de bloco C</div>
+        <div class="item">Exemplo de bloco D</div>
+        <div class="item">Exemplo de bloco E</div>
+        <div class="item">Exemplo de bloco F</div>
+        <div class="item">Exemplo de bloco G</div> 
+    </div> <br> <br>
+</body>
+</html>

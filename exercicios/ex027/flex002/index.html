@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.container {
+            background-color: lightsalmon;
+
+            display: flex;
+        }
+
+        div.item {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+            
+        }
+
+        div.container02 {
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        div.container03 {
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        div.container04 {
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+       
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+         <p>Configuração padrão row da esquerda para a direita, é o mesmo que colocar flex-direction: row. <br>Com esta configuração com direction: row, o meu eixo principal está deitado da esquerda para a direita. E o cross axis está de cima para baixo. <br> Obtendo assim no lado esquerdo o main start e no lado direito o main end. E na parte de cima o cross start e na parte de baixo o cross end. </p>
+        </p>
+    </div> <br>
+    <div class="container02">
+        <p>Configuração column de cima para baixo, é o mesmo que colocar flex-direction: column; <br>Com esta configuração, o meu eixo principal está deitado de cima para baixo. E o cross axis está deitado da esquerda para a direita. <br> Obtendo assim no lado de cima o main start e no lado de baixo o main end. E na parte da esquerda o cross start e na parte da direita o cross end. </p>
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div> <br>
+    <div class="container03">
+        
+     
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <p>Configuração row-reverse da direita para a esquerda, é o mesmo que colocar flex-direction: row-reverse; <br>Com esta configuração, o meu eixo principal está deitado da direita para a esquerda. E o cross axis está deitado de cima para baixo. <br> Obtendo assim no lado direito o main start e no lado esquerdo o main end. E na parte de baixo o cross start e na parte de cima o cross end. </p>
+    </div> <br>
+    <div class="container04">
+        <p>Configuração column-reverse de baixo para cima, é o mesmo que colocar flex-direction: column-reverse; <br>Com esta configuração, o meu eixo principal está deitado de baixo para cima. E o cross axis está deitado da esquerda para a direita. <br> Obtendo assim no lado de baixo o main start e no lado de cima o main end. E na parte da esquerda o cross start e na parte da direita o cross end. </p>
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>
