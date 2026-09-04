@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.container01 {
+            background-color: lightsalmon;
+
+            display: flex; /* Ativa o Flexbox */
+            flex-flow: row nowrap; /* Define a direção dos itens como linha e não permite que eles quebrem para a próxima linha, é uma forma abreviada de definir flex-direction e flex-wrap, no modo padrão que já é aplicado pelo navegador */
+            justify-content: flex-start; /* Alinha os itens no início do container, no modo padrão que já é aplicado pelo navegador */
+        }
+
+        div.container02 {
+    background-color: lightgreen;
+    display: flex; /* Ativa o Flexbox */
+    flex-flow: row-reverse nowrap; /* Define a direção dos itens como linha invertida e não permite que eles quebrem para a próxima linha, é uma forma abreviada de definir flex-direction e flex-wrap */
+    justify-content: flex-start; /* Alinha os itens no início do container, no modo padrão que já é aplicado pelo navegador */
+}
+
+div.container03 {
+    background-color: lightcoral;
+    display: flex; /* Ativa o Flexbox */
+    flex-flow: row nowrap; /* Define a direção dos itens como linha e não permite que eles quebrem para a próxima linha, é uma forma abreviada de definir flex-direction e flex-wrap */
+    justify-content: center; /* Alinha os itens no centro do container */
+}
+
+div.container04 {
+    background-color: lightgray;
+    display: flex; /* Ativa o Flexbox */
+    flex-flow: row nowrap; /* Define a direção dos itens como linha e não permite que eles quebrem para a próxima linha, é uma forma abreviada de definir flex-direction e flex-wrap */
+    justify-content: space-between; /* Distribui os itens igualmente, com o primeiro item no início do container e o último item no final do container */
+}
+
+div.container05 {
+    background-color: lightgray;
+    display: flex; /* Ativa o Flexbox */
+    flex-flow: row nowrap; /* Define a direção dos itens como linha e não permite que eles quebrem para a próxima linha, é uma forma abreviada de definir flex-direction e flex-wrap */
+    justify-content: space-evenly; /* Distribui os itens igualmente, com o mesmo espaço entre eles e nas extremidades do container */
+}
+
+div.container06 {
+    background-color: lightyellow;
+    display: flex; /* Ativa o Flexbox */
+    flex-flow: row nowrap; /* Define a direção dos itens como linha e não permite que eles quebrem para a próxima linha, é uma forma abreviada de definir flex-direction e flex-wrap */
+    justify-content: space-around; /* Distribui os itens igualmente, com o mesmo espaço entre eles e nas extremidades do container, mas com metade do espaço nas extremidades do container */
+}
+
+div.container07 {
+    background-color: lightgray;
+    display: flex; /* Ativa o Flexbox */
+    flex-flow: row nowrap; /* Define a direção dos itens como linha e não permite que eles quebrem para a próxima linha, é uma forma abreviada de definir flex-direction e flex-wrap */
+}
+
+div.container08 {
+    background-color: lightcyan;
+    height: 300px;
+    display: flex;  /* Ativa o Flexbox */
+    flex-flow: row wrap; /* Define a direção dos itens como linha e permite que eles quebrem para a próxima linha, é uma forma abreviada de definir flex-direction e flex-wrap */
+    justify-content: space-around; /* Distribui os itens igualmente, com o mesmo espaço entre eles e nas extremidades do container, mas com metade do espaço nas extremidades do container */
+    align-items: stretch; /* Alinha os itens no centro do container, no modo padrão que já é aplicado pelo navegador */
+}
+
+div.container09 {
+    background-color: lightpink;
+    height: 300px; /* Define a altura do container */
+    display: flex;  /* Ativa o Flexbox */
+    flex-flow: row wrap; /* Define a direção dos itens como linha e permite que eles quebrem para a próxima linha, é uma forma abreviada de definir flex-direction e flex-wrap */
+    justify-content: space-around; /* Distribui os itens igualmente, com o mesmo espaço entre eles e nas extremidades do container, mas com metade do espaço nas extremidades do container */
+    align-items: flex-start; /* Alinha os itens no início do container */
+}
+
+    div.container10 {
+    background-color: lightgreen;
+    height: 300px; /* Define a altura do container */
+    display: flex;  /* Ativa o Flexbox */
+    flex-flow: row wrap; /* Define a direção dos itens como linha e permite que eles quebrem para a próxima linha, é uma forma abreviada de definir flex-direction e flex-wrap */
+    justify-content: space-around; /* Distribui os itens igualmente, com o mesmo espaço entre eles e nas extremidades do container, mas com metade do espaço nas extremidades do container */
+    align-items: flex-end; /* Alinha os itens no final do container */
+}
+
+div.container11 {
+    background-color: lightgray;
+    height: 300px; /* Define a altura do container */
+    display: flex;  /* Ativa o Flexbox */
+    flex-flow: row wrap; /* Define a direção dos itens como linha e permite que eles quebrem para a próxima linha, é uma forma abreviada de definir flex-direction e flex-wrap */
+    justify-content: space-around; /* Distribui os itens igualmente, com o mesmo espaço entre eles e nas extremidades do container, mas com metade do espaço nas extremidades do container */
+    align-items: center; /* Alinha os itens no centro do container */
+}
+
+        div.item { /* Estilização dos itens dentro dos containers */
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+
+            
+        }
+    </style>
+</head>
+<h1>VALORES DE JUSTIFY-CONTENT</h1>
+<body>
+    <div class="container01">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div> <br> <br>
+
+    <div class="container02">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div> <br> <br>
+
+    <div class="container03">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div> <br> <br>
+
+    <div class="container04">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div> <br> <br>
+
+    <div class="container05">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div> <br> <br>
+
+    <div class="container06">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div> 
+    </div> <br> <br>
+
+   <div class="container07">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div> 
+    </div> <br> <br>
+<H2>ALINHAMENTO VERTICAL</H2>
+    <div class="container08">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div> 
+    </div> <br> <br>
+
+    <div class="container09">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div> 
+    </div> <br> <br>
+
+    <div class="container10">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div> 
+    </div> <br> <br>
+
+    <div class="container11">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div> 
+    </div> <br> <br>
+</body>
+</html>
