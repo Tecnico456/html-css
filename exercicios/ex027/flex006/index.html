@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.container {
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-flow: row wrap; /* O flex-flow faz com que os itens sejam dispostos em linhas e quebrados conforme necessário, e o row wrap garante que os itens sejam dispostos em linhas e quebrados conforme necessário */
+            align-items: flex-start; /* Alinha os itens na parte de cima do container */
+            height: 400px; /* Altura do container */
+        }
+
+        div.container02 {
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-flow: row wrap; /* O flex-flow faz com que os itens sejam dispostos em linhas e quebrados conforme necessário, e o row wrap garante que os itens sejam dispostos em linhas e quebrados conforme necessário */
+            align-content: stretch; /* É o alinhamento do conteúdo do container, ou seja, o alinhamento das linhas do container. O stretch faz com que as linhas se estiquem para ocupar todo o espaço disponível, que é o que já vem por padrão */
+            height: 400px; /* Altura do container */
+        }
+
+        div.container03 {
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-flow: row wrap; /* O flex-flow faz com que os itens sejam dispostos em linhas e quebrados conforme necessário, e o row wrap garante que os itens sejam dispostos em linhas e quebrados conforme necessário */
+            align-content: flex-start; /* É o alinhamento do conteúdo do container, ou seja, o alinhamento das linhas do container. O flex-start faz com que as linhas se alinhem na parte de cima do container */
+            height: 400px; /* Altura do container */
+        }
+
+        div.container04 {
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-flow: row wrap; /* O flex-flow faz com que os itens sejam dispostos em linhas e quebrados conforme necessário, e o row wrap garante que os itens sejam dispostos em linhas e quebrados conforme necessário */
+            align-content: flex-end; /* É o alinhamento do conteúdo do container, ou seja, o alinhamento das linhas do container. O flex-end faz com que as linhas se alinhem na parte de baixo do container */
+            height: 400px; /* Altura do container */
+        }
+
+        div.container05 {
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-flow: row wrap; /* O flex-flow faz com que os itens sejam dispostos em linhas e quebrados conforme necessário, e o row wrap garante que os itens sejam dispostos em linhas e quebrados conforme necessário */
+            align-content: center; /* É o alinhamento do conteúdo do container, ou seja, o alinhamento das linhas do container. O center faz com que as linhas se alinhem no centro do container */
+            height: 400px; /* Altura do container */
+        }
+
+        div.container06 {
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-flow: row wrap; /* O flex-flow faz com que os itens sejam dispostos em linhas e quebrados conforme necessário, e o row wrap garante que os itens sejam dispostos em linhas e quebrados conforme necessário */
+            align-content: space-between; /* É o alinhamento do conteúdo do container, ou seja, o alinhamento das linhas do container. O space-between faz com que as linhas se alinhem com espaço entre elas */
+            height: 400px; /* Altura do container */
+        }
+
+        div.container07 {
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-flow: row wrap; /* O flex-flow faz com que os itens sejam dispostos em linhas e quebrados conforme necessário, e o row wrap garante que os itens sejam dispostos em linhas e quebrados conforme necessário */
+            align-content: space-evenly; /* É o alinhamento do conteúdo do container, ou seja, o alinhamento das linhas do container. O space-evenly faz com que as linhas se alinhem com espaço igual entre elas */
+            height: 400px; /* Altura do container */
+        }
+
+        div.container08 {
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-flow: row wrap; /* O flex-flow faz com que os itens sejam dispostos em linhas e quebrados conforme necessário, e o row wrap garante que os itens sejam dispostos em linhas e quebrados conforme necessário */
+            align-content: space-around; /* É o alinhamento do conteúdo do container, ou seja, o alinhamento das linhas do container. O space-around faz com que as linhas se alinhem com espaço igual ao redor delas */
+            height: 400px; /* Altura do container */
+        }
+
+        div.item {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+
+            padding: 40px; /* Espaçamento interno */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div> <br>
+
+    <div class="container02">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div> <br>
+
+    <div class="container03">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>  <br>
+
+    <div class="container04">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>  <br>
+
+    <div class="container05">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div> <br>
+
+    <div class="container06">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
+        <div class="item">K</div>
+        <div class="item">L</div>
+        <div class="item">M</div>
+    </div> <br>
+
+    <div class="container07">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
+        <div class="item">K</div>
+        <div class="item">L</div>
+        <div class="item">M</div>
+    </div> <br>
+
+    <div class="container08">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>  <br>
+
+</body>
+</html>
