@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.container {
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-flow: row wrap; /* Define a direção dos itens e permite que eles quebrem para a próxima linha */
+            align-items: flex-start; /* Define o alinhamento dos itens no eixo transversal onde os itens são alinhados ao início grudado em cima do contêiner */
+            height: 400px; /* Define a altura do contêiner flexível */
+        }
+
+        div.item {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 20px;    
+        
+        }
+
+        div#i1 {
+            align-self: auto; /* O alinhamento é herdado do contêiner flexível */
+        }
+
+        div#i2 {
+            align-self: flex-start; /* O item é alinhado ao início da linha flexível */
+        }
+
+        div#i3 {
+            align-self: flex-end; /* O item é alinhado ao final da linha flexível */
+        }
+
+        div#i4 {
+            align-self: center; /* O item é alinhado ao centro da linha flexível */
+        }
+
+        div#i5 {
+            align-self: stretch; /* O item se estica para preencher a linha flexível */
+        }
+
+        
+        
+
+    </style>
+</head>
+<body>
+
+    <h1>Align Self</h1>
+    <p>O atributo <strong>align-self</strong> define o alinhamento de um item específico dentro de uma linha flexível.</p>
+    <p>O Align-Self vai funcionar diretamente no cross-axis ou seja no eixo transversal.</p>
+    <p>No align-self são disponiveis 5 valores:</p>
+    <ul>
+        <li><strong>auto</strong>: O alinhamento é herdado do contêiner flexível.</li>
+        <li><strong>flex-start</strong>: O item é alinhado ao início da linha flexível.</li>
+        <li><strong>flex-end</strong>: O item é alinhado ao final da linha flexível.</li>
+        <li><strong>center</strong>: O item é alinhado ao centro da linha flexível.</li>
+        <li><strong>stretch</strong>: O item se estica para preencher a linha flexível.</li>
+    </ul>
+    <div class="container">
+        <div class="item" id="i1">A</div>
+        <div class="item" id="i2">B</div>
+        <div class="item" id="i3">C</div>
+        <div class="item" id="i4">D</div>
+        <div class="item" id="i5">E</div>
+        <div class="item" id="i6">F</div>
+        <div class="item" id="i7">G</div>
+    </div>
+</body>
+</html>

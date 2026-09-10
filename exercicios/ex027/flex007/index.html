@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.container {
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-flow: row wrap; /* Define a direção dos itens e permite que eles quebrem para a próxima linha */
+        }
+
+        div.item {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 20px;    
+        
+        }
+
+        div#i1 {
+            order: 0; /* Define a ordem do item na linha flexível */
+        }   
+
+        div#i2 {
+            order: -2; /* Define a ordem do item na linha flexível */
+        }
+
+        div#i3 {
+            order: 4; /* Define a ordem do item na linha flexível */
+        }
+
+        div#i4 {
+            order: 8; /* Define a ordem do item na linha flexível */
+        }
+
+        div#i5 {
+            order:25; /* Define a ordem do item na linha flexível */
+        }
+
+        div#i6 {
+            order: 0; /* Define a ordem do item na linha flexível */
+        }
+
+        div#i7 {
+            order: -4; /* Define a ordem do item na linha flexível */
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Modificar a ordem dos itens</h1>
+    <p>O atributo <strong>order</strong> define a ordem dos itens em uma linha flexível. O valor padrão é 0, e os itens com valores menores aparecem antes dos itens com valores maiores.</p>
+    <p>Itens em uma linha flexível:</p>
+    <div class="container">
+        <div class="item" id="i1">A</div>
+        <div class="item" id="i2">B</div>
+        <div class="item" id="i3">C</div>
+        <div class="item" id="i4">D</div>
+        <div class="item" id="i5">E</div>
+        <div class="item" id="i6">F</div>
+        <div class="item" id="i7">G</div>
+    </div>
+</body>
+</html>
