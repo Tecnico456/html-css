@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.container {
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-flow: row nowrap; /* Define a direção dos itens e se eles podem quebrar para a próxima linha onde row nowrap serve para que os itens sejam dispostos em uma única linha, e flex-flow serve para definir ambas as propriedades em uma única declaração */
+        }
+
+        div.container02 {
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-flow: row nowrap; /* Define a direção dos itens e se eles podem quebrar para a próxima linha onde row nowrap serve para que os itens sejam dispostos em uma única linha, e flex-flow serve para definir ambas as propriedades em uma única declaração */
+        }
+
+        div.container03 {
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-flow: row wrap; /* Define a direção dos itens e se eles podem quebrar para a próxima linha onde row wrap serve para que os itens sejam dispostos em múltiplas linhas, e flex-flow serve para definir ambas as propriedades em uma única declaração */
+        }
+
+        div.item {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: auto; /* Define a largura inicial do item antes de ele crescer ou encolher, ele se adapta ao tamanho do conteúdo */
+        }
+
+        div.item02 {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 150px; /* Define a largura inicial de 150px */
+        }
+
+        div.item03 {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 150px; /* Define a largura inicial de 150px */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">Outro Conteúdo</div>
+        <div class="item">C</div>
+        <div class="item">Conteúdo um pouco maior</div>
+        <div class="item">E</div>
+        <div class="item">conteudo mair ainda, qe vai ocupar mais espaço.</div>
+        <div class="item">G</div>
+    </div> <br>
+
+    <div class="container02">
+        <div class="item02">A</div>
+        <div class="item02">Outro Conteúdo</div>
+        <div class="item02">C</div>
+        <div class="item02">Conteúdo um pouco maior</div>
+        <div class="item02">E</div>
+        <div class="item02">conteudo mair ainda, qe vai ocupar mais espaço.</div>
+        <div class="item02">G</div>
+    </div> <br>
+
+    <div class="container03">
+        <div class="item03">A</div>
+        <div class="item03">Outro Conteúdo</div>
+        <div class="item03">C</div>
+        <div class="item03">Conteúdo um pouco maior</div>
+        <div class="item03">E</div>
+        <div class="item03">conteudo mair ainda, qe vai ocupar mais espaço.</div>
+        <div class="item03">G</div>
+    </div> <br>
+</body>
+</html>
