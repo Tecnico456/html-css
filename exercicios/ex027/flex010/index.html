@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.container {
+            background-color: lightsalmon;
+            display: flex;
+            flex-flow: row nowrap; /* faz com que os itens fiquem em uma única linha e não quebrem para a próxima linha */
+        }
+
+        div.container06 {
+            background-color: lightsalmon;
+            display: flex;
+            flex-flow: row wrap; /* permite que os itens quebrem para a próxima linha se não houver espaço suficiente */
+        }
+
+        div.item {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 250px; /* define a largura base de cada item */
+        }
+
+        div.item02 {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 250px; /* define a largura base de cada item */
+            flex-shrink: 0; /* impede que os itens encolham */
+        }
+
+        div.item03 {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 250px; /* define a largura base de cada item */
+            flex-shrink: 1; /* permite que os itens encolham */
+        }
+
+        div.item04 {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 250px; /* define a largura base de cada item */
+            flex-grow: 0; /* impede que os itens cresçam */
+        }
+
+        div.item05 {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 250px; /* define a largura base de cada item */
+            flex-grow: 1; /* permite que os itens cresçam */
+        }
+
+        div.item06 {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 250px; /* define a largura base de cada item */
+            flex-grow: 0; /* impede que os itens cresçam */
+            flex-shrink: 1; /* permite que os itens encolham */
+        }
+
+        div.item07 {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 250px; /* define a largura base de cada item */
+            flex-grow: 1; /* permite que os itens cresçam */
+            flex-shrink: 1; /* permite que os itens encolham */
+        }
+
+        div.item08 {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 250px; /* define a largura base de cada item */
+            flex-grow: 1; /* permite que os itens cresçam */
+            flex-shrink: 1; /* permite que os itens encolham */
+        }
+        
+    </style>
+</head>
+
+<body>
+
+
+<h1>Exercício 27 - Flexbox</h1>
+
+    <p>O <strong>Flexbox</strong> é um modelo de layout do CSS que permite organizar elementos em uma página de forma flexível e responsiva. Ele facilita a criação de layouts complexos, alinhando e distribuindo espaço entre os itens dentro de um contêiner, mesmo quando seu tamanho é desconhecido ou dinâmico. Com o Flexbox, é possível controlar a direção, o alinhamento e a ordem dos elementos, tornando o design mais adaptável a diferentes tamanhos de tela e dispositivos.</p>
+
+    <p>
+        O <strong>flex-basis</strong> define a largura base de cada item no contêiner flexível. Ele especifica o tamanho inicial do item antes de qualquer espaço adicional ser distribuído. Por exemplo, se você definir flex-basis: 250px, cada item terá uma largura inicial de 250 pixels. Se houver espaço extra no contêiner, os itens podem crescer ou encolher dependendo das propriedades flex-grow e flex-shrink.
+    </p>
+
+    <p>
+        O <strong>flex-grow</strong> determina a capacidade de um item crescer em relação aos outros itens no contêiner. Se você definir flex-grow: 1, o item poderá ocupar espaço adicional disponível no contêiner, aumentando sua largura proporcionalmente. Se todos os itens tiverem flex-grow: 1, eles crescerão igualmente para preencher o espaço extra; se um item tiver flex-grow: 0, ele não crescerá, mesmo que haja espaço disponível.
+    </p>
+
+    <p>
+        O <strong>flex-shrink</strong> define a capacidade de um item encolher em relação aos outros itens no contêiner. Se você definir flex-shrink: 1, o item poderá reduzir sua largura quando não houver espaço suficiente no contêiner. Se todos os itens tiverem flex-shrink: 1, eles encolherão igualmente para se ajustarem ao espaço disponível; se um item tiver flex-shrink: 0, ele não encolherá, mesmo que o espaço seja limitado.
+    </p>
+
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+    </div> <br> <br>
+
+    <div class="container">
+        <div class="item02">A</div>
+        <div class="item02">B</div>
+        <div class="item02">C</div>
+    </div> <br> <br>
+
+    <div class="container">
+        <div class="item03">A</div>
+        <div class="item03">B</div>
+        <div class="item03">C</div>
+    </div> <br> <br>
+
+    <div class="container">
+        <div class="item04">A</div>
+        <div class="item04">B</div>
+        <div class="item04">C</div>
+    </div> <br> <br>
+
+    <div class="container">
+        <div class="item05">A</div>
+        <div class="item05">B</div>
+        <div class="item05">C</div>
+    </div> <br> <br>
+
+    <div class="container06">
+        <div class="item06">A</div>
+        <div class="item06">B</div>
+        <div class="item06">C</div>
+    </div> <br> <br>
+
+    <div class="container06">
+        <div class="item07">A</div>
+        <div class="item07">B</div>
+        <div class="item07">C</div>
+    </div> <br> <br>
+
+    <div class="container">
+        <div class="item08">A</div>
+        <div class="item08">B</div>
+        <div class="item08">C</div>
+    </div> <br> <br>
+
+    <div class="container">
+        <div class="item09">A</div>
+        <div class="item09">B</div>
+        <div class="item09">C</div>
+    </div> <br> <br>
+
+</body>
+</html>
