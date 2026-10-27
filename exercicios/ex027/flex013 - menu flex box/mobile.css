@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+header, header > nav { /* faz com que o menu fique em linha e quebre de linha se necessário */
+    flex-flow: column nowrap; /* faz com que os elementos fiquem em coluna e não quebrem de linha */
+}
+
+header > h1 {
+    flex-basis: 50px; /* faz com que o elemento tenha largura fixa de 50px */
+}
+
+header > nav > a {
+    width: 90vw; /* faz com que o elemento tenha largura de 90% da largura da tela */
+}

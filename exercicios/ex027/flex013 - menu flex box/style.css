@@ -26,12 +26,13 @@ header {
 }
 
 header > h1 {
-    border: 1px dotted black;
+    /* border: 1px dotted black; */
     flex: 0 0 200px; /* faz com que o elemento tenha largura fixa de 200px e não cresça nem encolha, o primeiro valor é o crescimento, o segundo é a redução e o terceiro é a largura */
+    text-shadow: 1px 1px 2px black; /* faz com que o texto tenha sombra */
 }
 
 header > nav {
-    border: 1px dotted black;
+    /* border: 1px dotted black; */
 
     display: flex; /* faz com que os elementos fiquem em linha */
     flex-flow: row wrap; /* faz com que os elementos fiquem em linha e quebrem de linha se necessário */
