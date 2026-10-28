@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    line-height: 1.5; /* faz com que fique com espaçamento entre as linhas */
+  
+}
+
+p, h1, h2 {
+    margin-bottom: 10px; 
+    text-align: justify; /* faz com que o texto fique justificado */
+}
+
+header, section.normal {
+    padding: 20px; 
+
+}
+
+section.flex-content {
+    padding: 20px;
+    background-color: #a8a8a8;
+
+    display: flex; /* define que o conteúdo será flexível */
+    flex-flow: column nowrap; /* define que os elementos filhos serão dispostos em coluna e não quebrarão a linha */
+    
+}
+
+/*section > article {
+    border: 2px dashed green;
+}*/
+
+article.text-media {
+    display: flex; /* define que o conteúdo será flexível */
+    flex-flow: row wrap; /* define que os elementos filhos serão dispostos em linha e quebrarão a linha se necessário */
+    justify-content: space-between; /* define que os elementos filhos serão distribuídos com espaço entre eles fazendo com que fique espaçado, colando o primeiro elemento na esquerda e o último na direita */
+}
+
+article.media-text {
+    display: flex; /* define que o conteúdo será flexível */
+    flex-flow: row wrap-reverse; /* define que os elementos filhos serão dispostos em linha e quebrarão a linha se necessário, mas na ordem inversa */
+    justify-content: space-between; /* define que os elementos filhos serão distribuídos com espaço entre eles, fazendo com que fique espaçado, colando o primeiro elemento na esquerda e o último na direita */
+}
+
+article > div.text {
+    flex: 1 1 500px; /* define que o elemento ocupará 1 parte do espaço disponível, poderá crescer e encolher, e terá um tamanho base de 500px, ela vai ficar com 500px pelo menos, ela vai crescer normalmente, e vai encolher normalmente */
+    border: 2px dashed blue;
+}
+
+article > div.media {
+    flex: 1 0 500px; /* define que o elemento ocupará 1 parte do espaço disponível, não poderá crescer, e terá um tamanho base de 500px, ela vai ficar com 500px pelo menos, ela não vai crescer, e vai encolher normalmente */
+    border: 2px dashed red;
+}
+
+div.media > img {
+    display: block; /* faz com que a imagem seja exibida como bloco, ocupando toda a largura disponível */
+    margin: auto; /* faz com que a imagem seja centralizada horizontalmente */
+    width: 300px; /* define que a imagem terá largura de 300px */
+    padding: 10px; /* faz com que a imagem tenha um espaçamento interno de 10px em todos os lados */
+}
+
+div.media > iframe {
+    display: block; /* faz com que o iframe seja exibido como bloco, ocupando toda a largura disponível */
+    margin: auto; /* faz com que o iframe seja centralizado horizontalmente */
+    padding: 0px 20px; /* faz com que o iframe tenha um espaçamento interno de 20px nas laterais */
+    width: 90%; /* define que o iframe terá largura de 90% do elemento pai */
+}
